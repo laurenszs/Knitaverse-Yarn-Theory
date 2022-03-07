@@ -60,6 +60,9 @@ sysinfo.txt
 *.aab
 *.unitypackage
 *.app
+*.log
+Project Library/ProjectSettings/ProjectVersion.txt
+
 
 # Crashlytics generated file
 crashlytics-build.properties
@@ -70,3 +73,5 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+Knitaverse Yarn Theory/ProjectSettings/ProjectVersion.txt
+Knitaverse Yarn Theory/ProjectSettings/EditorSettings.asset
