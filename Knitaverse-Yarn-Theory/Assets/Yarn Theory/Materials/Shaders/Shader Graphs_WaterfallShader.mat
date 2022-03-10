@@ -63,6 +63,14 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_444a7e90a3914354b5c166cb7c320811_Out_0:
+        m_Texture: {fileID: 2800000, guid: 5b41936bb55b1584c93b8a07d43bb1db, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_a15825d1e3084acc8a3ba3ba3b258370_Out_0:
+        m_Texture: {fileID: 2800000, guid: 5b41936bb55b1584c93b8a07d43bb1db, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -80,7 +88,8 @@ Material:
     - _AlphaClip: 0
     - _Blend: 0
     - _BlendOp: 0
-    - _BottomStrength: 1.65
+    - _BottomBrightness: 5.77
+    - _BottomStrength: 7.2
     - _BumpScale: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
@@ -100,7 +109,7 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _RipplesAmount: 2
+    - _RipplesAmount: 3.28
     - _SampleGI: 0
     - _Shininess: 0
     - _Smoothness: 0.5
@@ -110,6 +119,7 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Surface: 0
+    - _VertexOffsetAmount: -0.2
     - _VoronoiSpeed: 3
     - _Voronoiscale: 12
     - _WorkflowMode: 1
@@ -119,7 +129,7 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _RippleSpeed: {r: 0, g: 0.4, b: 0, a: 0}
-    - _RipplesColor: {r: 0, g: 0.3962248, b: 3.0897794, a: 1}
+    - _RipplesColor: {r: 0.14509805, g: 0.48235294, b: 0.7490196, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
     - _VoronoiSpeed: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
