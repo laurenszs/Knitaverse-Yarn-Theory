@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Shader Graphs_WaterfallShader
+  m_Name: WaterfallShader
   m_Shader: {fileID: -6465566751694194690, guid: d510d7bdc921032498b641b6ad3c1bd6, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
