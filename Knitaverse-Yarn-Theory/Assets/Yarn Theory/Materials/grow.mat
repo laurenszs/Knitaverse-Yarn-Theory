@@ -118,7 +118,7 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     - _clip: 0.907
-    - _grow: 54.2
+    - _grow: 60
     - _offset: 0.15
     - _scale: 0.73
     m_Colors:
