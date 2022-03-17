@@ -92,6 +92,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3377777547779884137}
+  - component: {fileID: 4401298024398103037}
   m_Layer: 0
   m_Name: Duck FBX
   m_TagString: Untagged
@@ -117,6 +118,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4401298024398103037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2714428556846669523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e743cecc5c2e64349a15e625b7f484d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.851
+  length: 1.501
 --- !u!1 &5982553170492533574
 GameObject:
   m_ObjectHideFlags: 0
