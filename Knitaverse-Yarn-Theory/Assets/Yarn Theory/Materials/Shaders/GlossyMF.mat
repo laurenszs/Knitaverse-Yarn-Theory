@@ -46,10 +46,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _AO: 0.73
+    - _AO: 0.805
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Smootheness: 1
+    - _Smootheness: 0
     m_Colors:
     - _Color: {r: 0.6792453, g: 0.6792453, b: 0.6792453, a: 1}
     - _Specular_Color: {r: 0.509434, g: 0.509434, b: 0.509434, a: 1}
