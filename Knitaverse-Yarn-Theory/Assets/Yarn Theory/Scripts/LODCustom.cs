@@ -1,7 +1,8 @@
+using System.Collections;
 using Unity.Mathematics;
 using UnityEngine;
 
-
+[ExecuteInEditMode]
 public class LODCustom : MonoBehaviour
 {
     [SerializeField] private Camera playerCamera;
@@ -15,13 +16,14 @@ public class LODCustom : MonoBehaviour
 
     private void Update()
     {
-        FadeObject();
-      //  CorrectDistances();
+        SwitchObject();
+        CheckValues();
     }
 
-    private void FadeObject()
+    private void SwitchObject()
     {
         var viewDistance = math.distance(transform.position, playerCamera.transform.position);
+
         if ((viewDistance <= meshFadeDistance))
         {
             meshObject.SetActive(true);
@@ -38,16 +40,19 @@ public class LODCustom : MonoBehaviour
             billboardObject.SetActive(false);
         }
     }
-    [ExecuteInEditMode]
-    private void CorrectDistances()
+
+    private void CheckValues()
     {
         if (meshFadeDistance >= billboardFadeDistance)
         {
-            billboardFadeDistance -= 1f;
+            StartCoroutine(CorrectDistances());
         }
-        else if (billboardFadeDistance <= meshFadeDistance)
-        {
-            meshFadeDistance += 1;
-        }
+    }
+
+    private IEnumerator CorrectDistances()
+    {
+        meshFadeDistance = billboardFadeDistance - .1f;
+        StopCoroutine(CorrectDistances());
+        yield return new WaitForEndOfFrame();
     }
 }
