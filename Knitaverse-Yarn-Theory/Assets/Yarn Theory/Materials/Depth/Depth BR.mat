@@ -37,7 +37,7 @@ Material:
     - _Displacement_Height: 0.2
     - _Displacement_Size: 3
     - _Fade_Alpha: 0
-    - _Fade_Amount: 0.05
+    - _Fade_Amount: 2
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Vertex_DIsplacement: 0
