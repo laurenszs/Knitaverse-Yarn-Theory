@@ -25,6 +25,5 @@ Shader "Custom/StencilShader"
                 Fail Keep
             }
         }
-
     }
 }
