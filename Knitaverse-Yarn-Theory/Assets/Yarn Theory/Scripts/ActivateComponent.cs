@@ -10,11 +10,9 @@ public class ActivateComponent : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
-        {
-            objectCollider.gameObject.SetActive(true);
-            Debug.Log("RandomLetters");
-        }
-        Debug.Log("Random");
+
+        objectCollider.gameObject.SetActive(true);
+
     }
 
 }
