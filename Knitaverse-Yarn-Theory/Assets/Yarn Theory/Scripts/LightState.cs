@@ -67,6 +67,11 @@ public class LightState : MonoBehaviour
 
         yield return new WaitForEndOfFrame();
     }
+    public void SetState()
+    {
+
+        StartCoroutine(SetLightState());
+    }
 
     private void OnTriggerEnter(Collider other)
     {
