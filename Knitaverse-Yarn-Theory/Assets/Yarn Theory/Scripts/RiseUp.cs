@@ -1,32 +1,35 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class RiseUp : MonoBehaviour
 {
-    [SerializeField] private GameObject targetObject;
+    [SerializeField] private Vector3 movementParams;
+    [SerializeField] private float movementSpeed = 1f;
     private Vector3 startPos;
-    private Vector3 endPos = new Vector3(0, 0, 1);
+    private Vector3 endPos;
 
-    private float platformRaiseDuration = 1f;
 
     // Start is called before the first frame update
+
     void Start()
     {
+        endPos = transform.localPosition + movementParams;
+        startPos = transform.localPosition;
     }
 
-    // Update is called once per frame
     void Update()
     {
+        Debug.Log("pos: " + startPos);
+        if (Input.GetKeyDown(KeyCode.P)) StartCoroutine(RaiseObject(movementSpeed, startPos, endPos));
+        if (Input.GetKeyDown(KeyCode.R)) StartCoroutine(RaiseObject(movementSpeed, endPos, startPos));
     }
 
     private void OnTriggerStay(Collider other)
     {
-        StartCoroutine(RaiseObject(platformRaiseDuration));
+        StartCoroutine(RaiseObject(movementSpeed, startPos, endPos));
     }
 
-    private IEnumerator RaiseObject(float duration)
+    private IEnumerator RaiseObject(float duration, Vector3 start, Vector3 end)
     {
         float timer = 0f;
         float factor;
@@ -35,12 +38,12 @@ public class RiseUp : MonoBehaviour
         {
             factor = timer / duration;
 
-            targetObject.transform.localPosition = Vector3.Lerp(startPos, endPos, factor);
+            transform.localPosition = Vector3.Lerp(start, end, factor);
 
             timer += Mathf.Min(Time.deltaTime, duration - timer);
             yield return null;
         }
 
-        targetObject.transform.localPosition = endPos;
+        transform.localPosition = end;
     }
 }

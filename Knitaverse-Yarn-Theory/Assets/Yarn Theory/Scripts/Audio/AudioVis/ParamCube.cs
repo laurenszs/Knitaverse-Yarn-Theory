@@ -3,20 +3,13 @@ using Image = UnityEngine.UI.Image;
 
 public class ParamCube : MonoBehaviour
 {
-    public int band;
+    [Range(0, 8)] public int band;
     public float startScale, scaleMult;
-    public bool useBuffer;
-    Image Colorimage;
+    public bool useMovement;
     public Material material;
 
     public int colorMult = 10;
 
-    public Light litty;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
 
     // Update is called once per frame
     void Update()
@@ -24,22 +17,19 @@ public class ParamCube : MonoBehaviour
         Color stuff = new Color32(
             (byte) ((AudioSomething.bandBuffer[band] * scaleMult) * colorMult),
             0, 0, 255);
-        litty.intensity =
-            (AudioSomething.bandBuffer[band] * scaleMult) * colorMult;
 
-        Debug.Log("Litty" + litty.intensity);
-        if (useBuffer)
+        if (useMovement)
         {
-            transform.localScale = new Vector3(transform.localScale.x,
-                (AudioSomething.bandBuffer[band] * scaleMult) + startScale, transform.localScale.z);
+            transform.localScale = new Vector3((AudioSomething.bandBuffer[band] * scaleMult) + startScale,
+                (AudioSomething.bandBuffer[band] * scaleMult) + startScale,
+                (AudioSomething.bandBuffer[band] * scaleMult) + startScale);
 
-            material.SetColor("_Color", stuff);
+            material.SetColor("_EmissionColor", stuff);
         }
 
-        if (!useBuffer)
+        if (!useMovement)
         {
-            transform.localScale = new Vector3(transform.localScale.x,
-                (AudioSomething.FreqBand[band] * scaleMult) + startScale, transform.localScale.z);
+            material.SetColor("_EmissionColor", stuff);
         }
     }
 }
