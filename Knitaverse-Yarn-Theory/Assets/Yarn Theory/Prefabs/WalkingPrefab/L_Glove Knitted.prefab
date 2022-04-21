@@ -831,7 +831,7 @@ GameObject:
   - component: {fileID: 4000013303659494}
   - component: {fileID: 114000013038800862}
   m_Layer: 0
-  m_Name: vr_glove_left_model_slim
+  m_Name: L_Glove Knitted
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
