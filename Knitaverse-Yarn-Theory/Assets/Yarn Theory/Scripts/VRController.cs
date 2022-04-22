@@ -41,6 +41,7 @@ public class VRController : MonoBehaviour
         SnapRotation();
     }
 
+    // The place of the controllers in the worldposition
     private void HandleHeight()
     {
         // Get the head in local space
@@ -60,6 +61,7 @@ public class VRController : MonoBehaviour
         m_CharacterController.center = newCenter;
     }
 
+    // The movement of the player
     private void CalculateMovement()
     {
         // Figure out movement orientation
@@ -82,6 +84,7 @@ public class VRController : MonoBehaviour
         m_CharacterController.Move(movement * Time.deltaTime);
     }
 
+    // Calculate the orientation using the trackpad position
     private Quaternion CalculateOrientation()
     {
         float rotation = Mathf.Atan2(m_MoveValue.axis.x, m_MoveValue.axis.y);
@@ -91,6 +94,7 @@ public class VRController : MonoBehaviour
         return Quaternion.Euler(orientationEuler);
     }
 
+    // Rotation of the player
     private void SnapRotation()
     {
         float snapValue = 0.0f;
