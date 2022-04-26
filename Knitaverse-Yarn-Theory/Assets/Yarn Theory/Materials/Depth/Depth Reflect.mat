@@ -42,14 +42,14 @@ Material:
     - _Metallic: 1
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Smootheness: 0.542
+    - _Smootheness: 0
     - _Vertex_DIsplacement: 0
     - _WaterDepth: 500
     m_Colors:
-    - _DeepWater: {r: 1.1587474, g: 1.1587474, b: 1.1587474, a: 0.18431373}
+    - _DeepWater: {r: 0, g: 0.26403296, b: 1.2697229, a: 0.12941177}
     - _Displacement_Speed: {r: 5, g: 5, b: 0, a: 0}
-    - _Emission: {r: 0, g: 0, b: 0, a: 0}
-    - _ShallowWater: {r: 12.996038, g: 3.0069265, b: 0, a: 1}
+    - _Emission: {r: 0, g: 0.0010444975, b: 0.03773582, a: 0}
+    - _ShallowWater: {r: 5.5908804, g: 1.3172232, b: 0, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &1702744654079767634
 MonoBehaviour:
