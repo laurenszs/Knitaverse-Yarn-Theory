@@ -41,6 +41,7 @@ public class OrbRise : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         if (!other.CompareTag("Player")) return;
+        spawners.SetActive(false);
         foreach (var t in orblist)
         {
             t.MoveDown();
