@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.Mathematics;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -8,10 +7,9 @@ public class TargetSpawner : MonoBehaviour
 {
     [SerializeField] private GameObject targetPrefab;
 
-    [Header("Spawn Parameters")] [SerializeField]
-    public Vector3 leftBoundary;
+    [Header("Spawn Parameters")] public Transform leftBoundary;
 
-    public Vector3 rightBoundary;
+    public Transform rightBoundary;
 
     [SerializeField] private Vector2 spawnInterval;
 
@@ -25,11 +23,9 @@ public class TargetSpawner : MonoBehaviour
     public List<GameObject> targetList;
 
 
-    // Start is called before the first frame update
-
     private void OnDrawGizmos()
     {
-        Gizmos.DrawLine(leftBoundary, rightBoundary);
+        Gizmos.DrawLine(leftBoundary.position, rightBoundary.position);
     }
 
     // Update is called once per frame
@@ -44,8 +40,8 @@ public class TargetSpawner : MonoBehaviour
     private IEnumerator SpawnTarget()
     {
         spawnable = false;
-        var xPos = Random.Range(leftBoundary.x, rightBoundary.x);
-        var zPos = Random.Range(leftBoundary.z, rightBoundary.z);
+        var xPos = Random.Range(leftBoundary.position.x, rightBoundary.position.x);
+        var zPos = Random.Range(leftBoundary.position.z, rightBoundary.position.z);
         var randomScale = Random.Range(targetScaleParameters.x, targetScaleParameters.y);
         var randomRotation = Random.Range(0, 360);
 

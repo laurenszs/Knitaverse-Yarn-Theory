@@ -11,8 +11,8 @@ public class TargetMovement : MonoBehaviour
     private void Start()
     {
         var parent = gameObject.transform.parent;
-        spawnLeft = parent.GetComponentInParent<TargetSpawner>().leftBoundary;
-        spawnRight = parent.GetComponentInParent<TargetSpawner>().rightBoundary;
+        spawnLeft = parent.GetComponentInParent<TargetSpawner>().leftBoundary.localPosition;
+        spawnRight = parent.GetComponentInParent<TargetSpawner>().rightBoundary.localPosition;
     }
 
     private void Update()

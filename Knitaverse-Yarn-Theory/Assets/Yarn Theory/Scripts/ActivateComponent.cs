@@ -5,13 +5,13 @@ using UnityEngine;
 public class ActivateComponent : MonoBehaviour
 {
 
-    public GameObject objectCollider;
+    public GameObject tunnelPrefab;
 
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
 
-        objectCollider.gameObject.SetActive(true);
+        tunnelPrefab.gameObject.SetActive(true);
 
     }
 
