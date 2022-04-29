@@ -17,8 +17,8 @@ public class TargetSpawner : MonoBehaviour
     [SerializeField] private float SpawnHeightStart;
     private bool spawnable = true;
 
-    [Header("Target Parameters")] [Header("Targets")] [SerializeField]
-    private Vector2 targetScaleParameters;
+    [Header("Target Parameters")]
+    [SerializeField] private Vector2 targetScaleParameters;
 
     public List<GameObject> targetList;
 

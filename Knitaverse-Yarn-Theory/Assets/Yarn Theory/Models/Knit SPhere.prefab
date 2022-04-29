@@ -96,6 +96,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14ea5b1451bd2444abcc055606577976, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: 0.2
-  maxHeight: 550
+  scrollSpeed: 0.3
+  maxHeight: 700
   respawnHeight: -550
