@@ -5,62 +5,53 @@ using UnityEngine;
 
 public class LightFade : MonoBehaviour
 {
+    public static LightFade Instance;
     [SerializeField] private GameObject lightContainer;
-    [SerializeField] private float fadeSpeed;
-    [SerializeField] private bool fadeActivate = false;
-    private bool negative = false;
-    public float fadeMultiplier = 0f;
+    [SerializeField] [Range(0, .1f)] private float fadeSpeed = .001f;
+    [Range(0, 1)] public float fadeCompletion;
     public Light[] lightList;
+    public List<float> intensityValue;
+    private bool triggered;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
+        Instance = this;
         lightList = lightContainer.GetComponentsInChildren<Light>();
-        foreach (var t in lightList)
+        if (lightList == null) return;
+        foreach (var lightInt in lightList)
         {
-            t.intensity *= fadeMultiplier;
+            intensityValue.Add(lightInt.intensity);
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        if (fadeActivate)
+        for (int i = 0; i < lightList.Length; i++)
         {
-            ActivateFade(fadeSpeed);
+            lightList[i].intensity = intensityValue[i] * fadeCompletion;
+        }
+
+        if (triggered)
+        {
+            if (fadeCompletion <= 1) fadeCompletion += fadeSpeed;
+        }
+        else
+        {
+            if (fadeCompletion >= 0) fadeCompletion -= fadeSpeed;
         }
     }
 
     private void OnTriggerStay(Collider other)
     {
         if (!other.CompareTag("Player")) return;
-        Debug.Log("stuff is working");
-        foreach (var t in lightList)
-        {
-            t.intensity *= fadeMultiplier;
-        }
+
+        triggered = true;
     }
 
     private void OnTriggerExit(Collider other)
     {
         if (!other.CompareTag("Player")) return;
-        if (fadeMultiplier is < 1 or >= 0)
-        {
-            fadeMultiplier += fadeSpeed;
-        }
 
-        foreach (var t in lightList)
-        {
-            t.intensity *= fadeMultiplier;
-        }
-    }
-
-    private void ActivateFade(float fSpeed)
-    {
-        if (fadeMultiplier is < 1 or >= 0)
-        {
-            if (negative) fadeMultiplier -= fSpeed;
-            else fadeMultiplier -= fSpeed;
-        }
+        triggered = false;
     }
 }
