@@ -26,7 +26,7 @@ public class MeshDeformer : MonoBehaviour
     }
     public void AddDeformingForce(Vector3 point, float force)
     {
-        Debug.DrawRay(new Vector3 (0,0,0),new Vector3(0,5,0));
+        Debug.DrawRay(Camera.main.transform.position, point);
     }
     public void OnDrawGizmos()
     {
