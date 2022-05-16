@@ -38,7 +38,7 @@ public class LightState : MonoBehaviour
                 pyramid.SetActive(true);
                 dayNightObject.SetActive(false);
                 pointLight.SetActive(false);
-                RenderSettings.skybox.SetFloat("_Exposure", skyboxExposure);
+              //  RenderSettings.skybox.SetFloat("_Exposure", skyboxExposure);
                 break;
             //center light
             case 2:
