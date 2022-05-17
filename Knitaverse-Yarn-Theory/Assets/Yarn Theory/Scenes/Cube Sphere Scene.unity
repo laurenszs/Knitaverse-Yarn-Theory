@@ -440,7 +440,7 @@ Transform:
   m_GameObject: {fileID: 1549038361}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -458,6 +458,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8134ed72241ddd47a57319ef8baa4a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  springForce: 20
 --- !u!1 &1867951040
 GameObject:
   m_ObjectHideFlags: 0
@@ -546,7 +547,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1867951040}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -6.53}
+  m_LocalPosition: {x: 0.33, y: 1, z: -9.22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -566,6 +567,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   force: 10
+  forceOffset: 0.1
 --- !u!114 &1867951047
 MonoBehaviour:
   m_ObjectHideFlags: 0

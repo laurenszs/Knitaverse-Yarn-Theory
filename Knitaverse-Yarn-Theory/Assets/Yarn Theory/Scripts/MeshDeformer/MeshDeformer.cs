@@ -4,32 +4,59 @@ using UnityEngine;
 
 public class MeshDeformer : MonoBehaviour
 {
-     Mesh deformingMesh;
+    Mesh deformingMesh;
     Vector3[] originalVertices, displacedVertices;
     Vector3[] vertexVelocities;
+    public float springForce = 20f;
+    public float damping = 5f;
 
     void Start()
-        //Copy the orignal vertices to the displaced vertices
+    //Copy the orignal vertices to the displaced vertices
     {
         deformingMesh = GetComponent<MeshFilter>().mesh;
         originalVertices = deformingMesh.vertices;
         displacedVertices = new Vector3[originalVertices.Length];
-        for (int i = 0; i<originalVertices.Length; i++)
+        for (int i = 0; i < originalVertices.Length; i++)
         { displacedVertices[i] = originalVertices[i]; }
-        //store the velocity of each vertex
+        //Store the velocity of each vertex
         vertexVelocities = new Vector3[originalVertices.Length];
     }
 
     void Update()
     {
-        
+        for (int i = 0; i < displacedVertices.Length; i++)
+        {
+            UpdateVertex(i);
+        }
+       //Assign the displaced vertices
+        deformingMesh.vertices = displacedVertices;
+        deformingMesh.RecalculateNormals();
     }
     public void AddDeformingForce(Vector3 point, float force)
     {
-        Debug.DrawRay(Camera.main.transform.position, point);
+        //
+        for (int i = 0; i < displacedVertices.Length; i++)
+        {
+            AddForceToVertex(i, point, force);
+        }
     }
-    public void OnDrawGizmos()
+    void AddForceToVertex (int i, Vector3 point, float force)
     {
-        //Gizmos.DrawLine(Camera.main.transform.position, point);
+        //Determine the force of the deformation point
+        Vector3 pointToVertex = displacedVertices[i] - point;
+        float attenuatedForce = force / (1f + pointToVertex.sqrMagnitude);
+        //Determine the velocity of the deformation point
+        float velocity = attenuatedForce * Time.deltaTime;
+        vertexVelocities[i] += pointToVertex.normalized * velocity;
+    }
+    void UpdateVertex (int i)
+    {
+        Vector3 velocity = vertexVelocities[i];
+        //Add a springforce so that the deformation will bounce back
+        Vector3 displacement = displacedVertices[i] - originalVertices[i];
+        velocity -= displacement * springForce * Time.deltaTime;
+        velocity *= 1f - damping * Time.deltaTime;
+        vertexVelocities[i] = velocity;
+        displacedVertices[i] += velocity * Time.deltaTime;
     }
 }
