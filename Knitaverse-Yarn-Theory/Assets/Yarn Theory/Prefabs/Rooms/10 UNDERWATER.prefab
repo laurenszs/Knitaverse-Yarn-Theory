@@ -3923,7 +3923,6 @@ GameObject:
   - component: {fileID: 7528585107727680713}
   - component: {fileID: 8585534718441844950}
   - component: {fileID: 8585534718441844951}
-  - component: {fileID: 4474501007031496495}
   m_Layer: 0
   m_Name: MovingBall
   m_TagString: Untagged
@@ -4010,24 +4009,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementParams: {x: 0, y: 0, z: 1}
   movementSpeed: 1
---- !u!114 &4474501007031496495
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6809866029793142357}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87231d0eda10af14aa5b7a1f46d91fdb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  band: 1
-  startScale: 10
-  scaleMult: 100
-  useMovement: 0
-  material: {fileID: 2100000, guid: 31f3a071081620b42b1f0810219ce9f5, type: 2}
-  colorMult: 5
 --- !u!1 &6809866029924419240
 GameObject:
   m_ObjectHideFlags: 0
@@ -4040,7 +4021,6 @@ GameObject:
   - component: {fileID: 7528585107856385076}
   - component: {fileID: 8585534718046801963}
   - component: {fileID: 8585534718046801962}
-  - component: {fileID: 4474501006629638106}
   m_Layer: 0
   m_Name: MovingBall (1)
   m_TagString: Untagged
@@ -4127,24 +4107,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementParams: {x: 0, y: 0, z: 1}
   movementSpeed: 1
---- !u!114 &4474501006629638106
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6809866029924419240}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87231d0eda10af14aa5b7a1f46d91fdb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  band: 1
-  startScale: 10
-  scaleMult: 100
-  useMovement: 0
-  material: {fileID: 2100000, guid: 31f3a071081620b42b1f0810219ce9f5, type: 2}
-  colorMult: 5
 --- !u!1 &6929991618565777079
 GameObject:
   m_ObjectHideFlags: 0

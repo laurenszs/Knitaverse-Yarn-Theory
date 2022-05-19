@@ -1,12 +1,14 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Timers;
 using UnityEngine;
 
 public enum Sounds
 {
     Steps,
     grabbing,
-    interact
+    Knitting
 }
 
 public class AudioLibrary : MonoBehaviour
@@ -14,13 +16,15 @@ public class AudioLibrary : MonoBehaviour
     public static AudioLibrary instance;
     public AudioSource audioPlayer, musicPlayer;
 
-    [SerializeField]
-    private List<SoundData> _soundFX = new List<SoundData>();
+    [SerializeField] private List<SoundData> _soundFX = new List<SoundData>();
 
-    // Start is called before the first frame update
     public static Dictionary<Sounds, AudioClip> audioclips = new Dictionary<Sounds, AudioClip>();
 
     private static Dictionary<Sounds, float> playingSounds = new Dictionary<Sounds, float>();
+
+    public float tempInterval = -1f;
+    
+    private float timer;
 
     // Start is called before the first frame update
     private void Awake()
@@ -37,12 +41,18 @@ public class AudioLibrary : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        StartCoroutine(loopsound(Sounds.Knitting));
+    }
+
     private void Start()
     {
         foreach (SoundData sound in _soundFX)
         {
             audioclips.Add(sound.Name, sound.Audio);
         }
+
         audioPlayer = GetComponentInChildren<AudioSource>();
     }
 
@@ -50,7 +60,7 @@ public class AudioLibrary : MonoBehaviour
     {
         try
         {
-            AudioLibrary.instance.audioPlayer.PlayOneShot(audioclips[playSound]);//plays audio based on given string
+            AudioLibrary.instance.audioPlayer.PlayOneShot(audioclips[playSound]); //plays audio based on given string
         }
         catch (Exception ex)
         {
@@ -81,5 +91,12 @@ public class AudioLibrary : MonoBehaviour
     public void PlayRandomSound(params Sounds[] sound)
     {
         PlaySound(sound[UnityEngine.Random.Range(0, sound.Length)]);
+    }
+
+    public IEnumerator loopsound(Sounds playsound)
+    {
+        PlaySound(playsound);
+
+        yield return new WaitForSeconds(audioclips[playsound].length);
     }
 }
