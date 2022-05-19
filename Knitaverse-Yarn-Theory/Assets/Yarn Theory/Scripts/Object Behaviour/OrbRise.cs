@@ -1,5 +1,3 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,6 +5,7 @@ public class OrbRise : MonoBehaviour
 {
     [SerializeField] private List<RiseUp> orblist;
     [SerializeField] private GameObject spawners;
+
 
     private void Start()
     {
@@ -18,13 +17,9 @@ public class OrbRise : MonoBehaviour
 
     private void Update()
     {
-        //remove after testing
-        if (Input.GetKeyDown(KeyCode.P))
+        if (LightFade.Instance.fadeCompletion <= 0)
         {
-            foreach (var t in orblist)
-            {
-                t.MoveUp();
-            }
+            spawners.SetActive(false);
         }
     }
 
@@ -41,7 +36,6 @@ public class OrbRise : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         if (!other.CompareTag("Player")) return;
-        spawners.SetActive(false);
         foreach (var t in orblist)
         {
             t.MoveDown();

@@ -2,9 +2,11 @@ using UnityEngine;
 
 public class ActivateComponent : MonoBehaviour
 {
-
+    [Tooltip("activates object on trigger enter and disables it when leaving the trigger")]
     public GameObject[] activateObject;
+    [Tooltip("disables object on trigger enter and activates it when leaving the trigger")]
     public GameObject[] disableObject;
+    [Tooltip("activates object on trigger enter")]
     public GameObject[] stayActiveObject;
 
 
