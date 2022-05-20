@@ -15,6 +15,7 @@ public class KnittingAudio : MonoBehaviour
         {
             StartCoroutine(SoundOut());
             Invoke("AudioStopPlaying", 2.5f);
+            gameObject.SetActive(false);
         }
     }
 
