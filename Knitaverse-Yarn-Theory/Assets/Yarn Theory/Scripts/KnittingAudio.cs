@@ -7,7 +7,7 @@ public class KnittingAudio : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip knitting;
     public bool keepPlaying = true;
-    public float knitSoundTimer = 0.3f;
+    public float knitSoundTimer;
 
     private void OnTriggerEnter(Collider other)
     {
