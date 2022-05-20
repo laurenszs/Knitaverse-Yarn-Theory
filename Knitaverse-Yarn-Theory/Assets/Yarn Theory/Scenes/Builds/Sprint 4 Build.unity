@@ -163,6 +163,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 49435883}
     m_Modifications:
+    - target: {fileID: 384852838753353674, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3866903575734009540, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
       propertyPath: m_Name
       value: KnittingTunnel (4)
@@ -232,16 +236,28 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6687862472661659232, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6687862472661659232, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.65
+      value: 0.291
+      objectReference: {fileID: 0}
+    - target: {fileID: 6687862472661659232, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.176
       objectReference: {fileID: 0}
     - target: {fileID: 8414310291273255655, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 8695309128495522849, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
+      propertyPath: m_Size.y
+      value: 4.12
+      objectReference: {fileID: 0}
     - target: {fileID: 8949512849355653959, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9194892962024452447, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
       propertyPath: m_Mesh
@@ -289,6 +305,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1297232126}
     m_Modifications:
+    - target: {fileID: 384852838753353674, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3866903575734009540, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
       propertyPath: m_Name
       value: KnittingTunnel (7)
@@ -358,16 +378,32 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6687862472661659232, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6687862472661659232, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6687862472661659232, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.65
+      value: 0.374
+      objectReference: {fileID: 0}
+    - target: {fileID: 6687862472661659232, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.201
       objectReference: {fileID: 0}
     - target: {fileID: 8414310291273255655, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 8695309128495522849, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
+      propertyPath: m_Size.y
+      value: 4.12
+      objectReference: {fileID: 0}
     - target: {fileID: 8949512849355653959, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9194892962024452447, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
       propertyPath: m_Mesh
@@ -382,6 +418,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1039819330}
     m_Modifications:
+    - target: {fileID: 384852838753353674, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3866903575734009540, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
       propertyPath: m_Name
       value: KnittingTunnel (2)
@@ -451,6 +491,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6687862472661659232, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6687862472661659232, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.7
       objectReference: {fileID: 0}
@@ -458,9 +502,13 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 8695309128495522849, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
+      propertyPath: m_Size.y
+      value: 4.12
+      objectReference: {fileID: 0}
     - target: {fileID: 8949512849355653959, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9194892962024452447, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
       propertyPath: m_Mesh
@@ -475,6 +523,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1589387637}
     m_Modifications:
+    - target: {fileID: 384852838753353674, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3866903575734009540, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
       propertyPath: m_Name
       value: KnittingTunnel (10)
@@ -544,6 +596,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6687862472661659232, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6687862472661659232, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.65
       objectReference: {fileID: 0}
@@ -551,9 +607,13 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 8695309128495522849, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
+      propertyPath: m_Size.y
+      value: 4.12
+      objectReference: {fileID: 0}
     - target: {fileID: 8949512849355653959, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9194892962024452447, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
       propertyPath: m_Mesh
@@ -664,6 +724,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 136922492}
     m_Modifications:
+    - target: {fileID: 384852838753353674, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3866903575734009540, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
       propertyPath: m_Name
       value: KnittingTunnel (6)
@@ -733,6 +797,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6687862472661659232, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6687862472661659232, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.65
       objectReference: {fileID: 0}
@@ -740,9 +808,13 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 8695309128495522849, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
+      propertyPath: m_Size.y
+      value: 4.12
+      objectReference: {fileID: 0}
     - target: {fileID: 8949512849355653959, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9194892962024452447, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
       propertyPath: m_Mesh
@@ -897,6 +969,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 136922492}
     m_Modifications:
+    - target: {fileID: 384852838753353674, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3866903575734009540, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
       propertyPath: m_Name
       value: KnittingTunnel (5)
@@ -966,16 +1042,32 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6687862472661659232, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6687862472661659232, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 6687862472661659232, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.65
+      value: 0.347
+      objectReference: {fileID: 0}
+    - target: {fileID: 6687862472661659232, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.28
       objectReference: {fileID: 0}
     - target: {fileID: 8414310291273255655, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 8695309128495522849, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
+      propertyPath: m_Size.y
+      value: 4.12
+      objectReference: {fileID: 0}
     - target: {fileID: 8949512849355653959, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9194892962024452447, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
       propertyPath: m_Mesh
@@ -1113,6 +1205,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1589387637}
     m_Modifications:
+    - target: {fileID: 384852838753353674, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3866903575734009540, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
       propertyPath: m_Name
       value: KnittingTunnel (9)
@@ -1182,16 +1278,24 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6687862472661659232, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6687862472661659232, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.65
+      value: 0.246
       objectReference: {fileID: 0}
     - target: {fileID: 8414310291273255655, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 8695309128495522849, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
+      propertyPath: m_Size.y
+      value: 4.12
+      objectReference: {fileID: 0}
     - target: {fileID: 8949512849355653959, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9194892962024452447, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
       propertyPath: m_Mesh
@@ -1299,6 +1403,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1039819330}
     m_Modifications:
+    - target: {fileID: 384852838753353674, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3866903575734009540, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
       propertyPath: m_Name
       value: KnittingTunnel (11)
@@ -1368,16 +1476,28 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6687862472661659232, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6687862472661659232, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.7
+      value: 0.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 6687862472661659232, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.125
       objectReference: {fileID: 0}
     - target: {fileID: 8414310291273255655, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 8695309128495522849, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
+      propertyPath: m_Size.y
+      value: 4.12
+      objectReference: {fileID: 0}
     - target: {fileID: 8949512849355653959, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9194892962024452447, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
       propertyPath: m_Mesh
@@ -1663,6 +1783,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 49435883}
     m_Modifications:
+    - target: {fileID: 384852838753353674, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3866903575734009540, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
       propertyPath: m_Name
       value: KnittingTunnel (3)
@@ -1732,6 +1856,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6687862472661659232, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6687862472661659232, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.65
       objectReference: {fileID: 0}
@@ -1739,9 +1867,13 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 8695309128495522849, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
+      propertyPath: m_Size.y
+      value: 4.12
+      objectReference: {fileID: 0}
     - target: {fileID: 8949512849355653959, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9194892962024452447, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
       propertyPath: m_Mesh
@@ -1797,6 +1929,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1297232126}
     m_Modifications:
+    - target: {fileID: 384852838753353674, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3866903575734009540, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
       propertyPath: m_Name
       value: KnittingTunnel (8)
@@ -1866,6 +2002,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6687862472661659232, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6687862472661659232, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.65
       objectReference: {fileID: 0}
@@ -1873,9 +2013,13 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 8695309128495522849, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
+      propertyPath: m_Size.y
+      value: 4.12
+      objectReference: {fileID: 0}
     - target: {fileID: 8949512849355653959, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9194892962024452447, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
       propertyPath: m_Mesh
@@ -1961,6 +2105,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 996408041128572102, guid: babcdd937c577414cbc5fe7211852ab6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 021b6d52b58ae684597c145b540b3103, type: 2}
+    - target: {fileID: 1122482979473324661, guid: babcdd937c577414cbc5fe7211852ab6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 021b6d52b58ae684597c145b540b3103, type: 2}
+    - target: {fileID: 1350677288221491113, guid: babcdd937c577414cbc5fe7211852ab6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 021b6d52b58ae684597c145b540b3103, type: 2}
+    - target: {fileID: 5045919014017977207, guid: babcdd937c577414cbc5fe7211852ab6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 021b6d52b58ae684597c145b540b3103, type: 2}
+    - target: {fileID: 7982457364199471841, guid: babcdd937c577414cbc5fe7211852ab6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0e750da5a5856654ea7ce270c9d8c1ee, type: 2}
+    - target: {fileID: 7982457364312219571, guid: babcdd937c577414cbc5fe7211852ab6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0e750da5a5856654ea7ce270c9d8c1ee, type: 2}
+    - target: {fileID: 7982457364629589837, guid: babcdd937c577414cbc5fe7211852ab6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0e750da5a5856654ea7ce270c9d8c1ee, type: 2}
+    - target: {fileID: 7982457365222837444, guid: babcdd937c577414cbc5fe7211852ab6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0e750da5a5856654ea7ce270c9d8c1ee, type: 2}
     - target: {fileID: 8720929374484370682, guid: babcdd937c577414cbc5fe7211852ab6, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -2008,6 +2184,42 @@ PrefabInstance:
     - target: {fileID: 8720929374484370685, guid: babcdd937c577414cbc5fe7211852ab6, type: 3}
       propertyPath: m_Name
       value: Hub prefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 8720929375922670216, guid: babcdd937c577414cbc5fe7211852ab6, type: 3}
+      propertyPath: traceLayerMask.m_Bits
+      value: 247
+      objectReference: {fileID: 0}
+    - target: {fileID: 9118749599357301794, guid: babcdd937c577414cbc5fe7211852ab6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.370004
+      objectReference: {fileID: 0}
+    - target: {fileID: 9118749599357301794, guid: babcdd937c577414cbc5fe7211852ab6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.7900009
+      objectReference: {fileID: 0}
+    - target: {fileID: 9118749599867109774, guid: babcdd937c577414cbc5fe7211852ab6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 9118749599867109774, guid: babcdd937c577414cbc5fe7211852ab6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 9118749600249291996, guid: babcdd937c577414cbc5fe7211852ab6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.370004
+      objectReference: {fileID: 0}
+    - target: {fileID: 9118749600249291996, guid: babcdd937c577414cbc5fe7211852ab6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.7900009
+      objectReference: {fileID: 0}
+    - target: {fileID: 9118749600890566571, guid: babcdd937c577414cbc5fe7211852ab6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.370004
+      objectReference: {fileID: 0}
+    - target: {fileID: 9118749600890566571, guid: babcdd937c577414cbc5fe7211852ab6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.7900009
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: babcdd937c577414cbc5fe7211852ab6, type: 3}
