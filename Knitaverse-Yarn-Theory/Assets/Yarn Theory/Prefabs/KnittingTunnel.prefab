@@ -257,7 +257,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4c32fb9e71c0e8438cb232ba6463d3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audiosource: {fileID: 787282546392144266}
+  audioSource: {fileID: 787282546392144266}
   knitting: {fileID: 8300000, guid: d59c31db0249cae489e7e4f2e31a734a, type: 3}
   keepPlaying: 1
   knitSoundTimer: 0.5
@@ -286,7 +286,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3414135942948053748, guid: 0fad188695c65b3439125083a3581005, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3414135942948053751, guid: 0fad188695c65b3439125083a3581005, type: 3}
       propertyPath: m_RootOrder
