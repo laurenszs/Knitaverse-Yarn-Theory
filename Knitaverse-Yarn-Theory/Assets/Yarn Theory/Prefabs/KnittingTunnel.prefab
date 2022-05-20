@@ -260,7 +260,7 @@ MonoBehaviour:
   audiosource: {fileID: 787282546392144266}
   knitting: {fileID: 8300000, guid: d59c31db0249cae489e7e4f2e31a734a, type: 3}
   keepPlaying: 1
-  knitSoundTimer: 0.3
+  knitSoundTimer: 0.5
 --- !u!1001 &6003997627122491827
 PrefabInstance:
   m_ObjectHideFlags: 0

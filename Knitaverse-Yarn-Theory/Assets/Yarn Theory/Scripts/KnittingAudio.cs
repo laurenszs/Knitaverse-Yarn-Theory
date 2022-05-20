@@ -4,25 +4,31 @@ using UnityEngine;
 
 public class KnittingAudio : MonoBehaviour
 {
-    public AudioSource audiosource;
+    public AudioSource audioSource;
     public AudioClip knitting;
     public bool keepPlaying = true;
-    public float knitSoundTimer = 0.3f;
+    public float knitSoundTimer;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
             StartCoroutine(SoundOut());
+            Invoke("AudioStopPlaying", 2.5f);
         }
+    }
+
+    void AudioStopPlaying()
+    {
+        audioSource.Stop();
     }
     IEnumerator SoundOut()
     {
-        audiosource.PlayOneShot(knitting);
+        audioSource.PlayOneShot(knitting);
 
         while (keepPlaying)
         {
-            audiosource.PlayOneShot(knitting);
+            audioSource.PlayOneShot(knitting);
             Debug.Log("IsPlaying");
             yield return new WaitForSeconds(knitSoundTimer);
         }
