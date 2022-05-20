@@ -20,8 +20,9 @@ public class KnittingAudio : MonoBehaviour
 
     void AudioStopPlaying()
     {
-        audioSource.Stop();
+        keepPlaying = false;
     }
+
     IEnumerator SoundOut()
     {
         audioSource.PlayOneShot(knitting);
