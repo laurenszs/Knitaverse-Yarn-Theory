@@ -10,7 +10,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.collab-proxy": {
-      "version": "1.15.13",
+      "version": "1.15.17",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -230,6 +230,7 @@
     },
     "com.unity.visualeffectgraph": {
       "version": "12.1.5",
+
       "depth": 0,
       "source": "builtin",
       "dependencies": {
@@ -239,13 +240,13 @@
     },
     "com.unity.visualscripting": {
       "version": "1.7.6",
+
       "depth": 0,
-      "source": "registry",
+      "source": "builtin",
       "dependencies": {
-        "com.unity.ugui": "1.0.0",
-        "com.unity.modules.jsonserialize": "1.0.0"
-      },
-      "url": "https://packages.unity.com"
+        "com.unity.shadergraph": "12.1.5",
+        "com.unity.render-pipelines.core": "12.1.5"
+      }
     },
     "com.unity.xr.legacyinputhelpers": {
       "version": "2.1.8",
