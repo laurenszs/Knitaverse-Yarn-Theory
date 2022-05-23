@@ -14,14 +14,14 @@ public class KnittingAudio : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             StartCoroutine(SoundOut());
-            Invoke("AudioStopPlaying", 2.5f);
-            gameObject.SetActive(false);
+            Invoke("AudioStopPlaying", 3.0f);
         }
     }
 
     void AudioStopPlaying()
     {
         keepPlaying = false;
+        gameObject.SetActive(false);
     }
 
     IEnumerator SoundOut()

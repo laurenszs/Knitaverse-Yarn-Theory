@@ -48,7 +48,7 @@ GameObject:
   - component: {fileID: 3921859414154799650}
   - component: {fileID: 787282546392144266}
   - component: {fileID: 954458296569048724}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -260,7 +260,7 @@ MonoBehaviour:
   audioSource: {fileID: 787282546392144266}
   knitting: {fileID: 8300000, guid: d59c31db0249cae489e7e4f2e31a734a, type: 3}
   keepPlaying: 1
-  knitSoundTimer: 0.5
+  knitSoundTimer: 0.8
 --- !u!1001 &6003997627122491827
 PrefabInstance:
   m_ObjectHideFlags: 0
