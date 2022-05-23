@@ -49,7 +49,7 @@ Material:
     - _DeepWater: {r: 0, g: 0.26403296, b: 1.2697229, a: 0}
     - _Displacement_Speed: {r: 5, g: 5, b: 0, a: 0}
     - _Emission: {r: 0, g: 0.0010444975, b: 0.03773582, a: 0}
-    - _ShallowWater: {r: 1.8443027, g: 0, b: 0.24140087, a: 1}
+    - _ShallowWater: {r: 1.8443027, g: 1.0670242, b: 0, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &1702744654079767634
 MonoBehaviour:
