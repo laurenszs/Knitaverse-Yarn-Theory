@@ -25,6 +25,16 @@ public class LightState : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
+        SwitchLightState();
+
+        //testing keys
+        if (!Input.GetKeyDown("space")) return;
+        StartCoroutine(SetLightState());
+        Debug.Log("Lighting State" + currentState);
+    }
+
+    private void SwitchLightState()
+    {
         switch (currentState)
         {
             //DayCycle
@@ -38,7 +48,7 @@ public class LightState : MonoBehaviour
                 pyramid.SetActive(true);
                 dayNightObject.SetActive(false);
                 pointLight.SetActive(false);
-                RenderSettings.skybox.SetFloat("_Exposure", skyboxExposure);
+                //  RenderSettings.skybox.SetFloat("_Exposure", skyboxExposure);
                 break;
             //center light
             case 2:
@@ -47,11 +57,6 @@ public class LightState : MonoBehaviour
                 pointLight.SetActive(true);
                 break;
         }
-
-        //testing keys
-        if (!Input.GetKeyDown("space")) return;
-        StartCoroutine(SetLightState());
-        Debug.Log("Lighting State" + currentState);
     }
 
     private IEnumerator SetLightState()
@@ -67,9 +72,9 @@ public class LightState : MonoBehaviour
 
         yield return new WaitForEndOfFrame();
     }
+
     public void SetState()
     {
-
         StartCoroutine(SetLightState());
     }
 

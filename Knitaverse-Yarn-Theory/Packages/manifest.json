@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "com.unity.collab-proxy": "1.15.13",
+    "com.unity.collab-proxy": "1.15.17",
     "com.unity.feature.development": "1.0.1",
     "com.unity.formats.alembic": "2.2.2",
     "com.unity.ide.rider": "3.0.13",
@@ -13,6 +13,7 @@
     "com.unity.textmeshpro": "3.0.6",
     "com.unity.timeline": "1.6.4",
     "com.unity.ugui": "1.0.0",
+    "com.unity.visualeffectgraph": "12.1.5",
     "com.unity.visualscripting": "1.7.6",
     "com.valvesoftware.unity.openvr": "file:../Assets/SteamVR/OpenVRUnityXRPackage/Editor/com.valvesoftware.unity.openvr-1.1.4.tgz",
     "com.unity.modules.ai": "1.0.0",
