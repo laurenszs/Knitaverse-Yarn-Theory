@@ -277,7 +277,7 @@ GameObject:
   - component: {fileID: 2149634966065671560}
   - component: {fileID: 2149634966070515502}
   - component: {fileID: 2149634966073971088}
-  m_Layer: 27
+  m_Layer: 9
   m_Name: BodyCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -535,7 +535,7 @@ GameObject:
   - component: {fileID: 2149634966070504406}
   - component: {fileID: 2035640177485970312}
   - component: {fileID: 2035640177896346404}
-  m_Layer: 26
+  m_Layer: 10
   m_Name: LeftHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -675,7 +675,7 @@ GameObject:
   - component: {fileID: 2149634966070717256}
   - component: {fileID: 2035640178144830986}
   - component: {fileID: 2035640204546482946}
-  m_Layer: 26
+  m_Layer: 10
   m_Name: RightHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
