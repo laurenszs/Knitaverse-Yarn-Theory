@@ -190,7 +190,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7257506402289850883}
   m_Layer: 0
-  m_Name: Big Mirror uv unwrap final v4
+  m_Name: Mirror to Obi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

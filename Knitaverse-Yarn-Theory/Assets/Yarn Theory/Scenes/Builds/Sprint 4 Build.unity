@@ -5315,6 +5315,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3215590233980181499, guid: 1d2fbac9e772e2540950df3c01d3da39, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: eb64554281dcb33409450f298efbc56b, type: 2}
     - target: {fileID: 7257506402289850883, guid: 1d2fbac9e772e2540950df3c01d3da39, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -5377,7 +5381,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d2fbac9e772e2540950df3c01d3da39, type: 3}
---- !u!114 &3177033892573934961
+--- !u!114 &3177033892573934966
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5386,7 +5390,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2486818043990650069}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d081d1b549b8594fb469982f17e6544, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c2be9233b2a4c042a9ddea822eb5a9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &3858526091580142939

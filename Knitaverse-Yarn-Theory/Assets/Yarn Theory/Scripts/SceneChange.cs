@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneChanger : MonoBehaviour
+public class SceneChange : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(0);
     }
 }
