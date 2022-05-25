@@ -3806,7 +3806,6 @@ GameObject:
   - component: {fileID: 7528585107566888704}
   - component: {fileID: 8585534718269190943}
   - component: {fileID: 8585534718269190942}
-  - component: {fileID: 4474501006868671734}
   m_Layer: 0
   m_Name: MovingBall (2)
   m_TagString: Untagged
@@ -3893,24 +3892,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementParams: {x: 0, y: 0, z: 1}
   movementSpeed: 1
---- !u!114 &4474501006868671734
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6809866029685302684}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87231d0eda10af14aa5b7a1f46d91fdb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  band: 1
-  startScale: 10
-  scaleMult: 100
-  useMovement: 0
-  material: {fileID: 2100000, guid: 31f3a071081620b42b1f0810219ce9f5, type: 2}
-  colorMult: 5
 --- !u!1 &6809866029793142357
 GameObject:
   m_ObjectHideFlags: 0
