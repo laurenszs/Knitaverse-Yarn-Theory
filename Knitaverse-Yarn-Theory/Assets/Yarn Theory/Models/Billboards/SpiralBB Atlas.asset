@@ -1,0 +1,160 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ce58035a221cef4e9f89ce0e83ee118, type: 3}
+  m_Name: SpiralBB Atlas
+  m_EditorClassIdentifier: 
+  rendererScale: {x: 158, y: 485.8, z: 1}
+  uvCoordinates:
+  - bottomLeft: {x: 0, y: 0}
+    bottomRight: {x: 0.03735091, y: 0}
+    topRight: {x: 0.03735091, y: 0.51661724}
+    topLeft: {x: 0, y: 0.51661724}
+  - bottomLeft: {x: 0.03735091, y: 0}
+    bottomRight: {x: 0.073697425, y: 0}
+    topRight: {x: 0.073697425, y: 0.51721066}
+    topLeft: {x: 0.03735091, y: 0.51721066}
+  - bottomLeft: {x: 0.073697425, y: 0}
+    bottomRight: {x: 0.11155053, y: 0}
+    topRight: {x: 0.11155053, y: 0.50949556}
+    topLeft: {x: 0.073697425, y: 0.50949556}
+  - bottomLeft: {x: 0.11155053, y: 0}
+    bottomRight: {x: 0.15116133, y: 0}
+    topRight: {x: 0.15116133, y: 0.49228486}
+    topLeft: {x: 0.11155053, y: 0.49228486}
+  - bottomLeft: {x: 0.15116133, y: 0}
+    bottomRight: {x: 0.19278091, y: 0}
+    topRight: {x: 0.19278091, y: 0.46884274}
+    topLeft: {x: 0.15116133, y: 0.46884274}
+  - bottomLeft: {x: 0.19278091, y: 0}
+    bottomRight: {x: 0.23653483, y: 0}
+    topRight: {x: 0.23653483, y: 0.43620178}
+    topLeft: {x: 0.19278091, y: 0.43620178}
+  - bottomLeft: {x: 0.23653483, y: 0}
+    bottomRight: {x: 0.28254864, y: 0}
+    topRight: {x: 0.28254864, y: 0.3884273}
+    topLeft: {x: 0.23653483, y: 0.3884273}
+  - bottomLeft: {x: 0.28254864, y: 0}
+    bottomRight: {x: 0.33075958, y: 0}
+    topRight: {x: 0.33075958, y: 0.32344213}
+    topLeft: {x: 0.28254864, y: 0.32344213}
+  - bottomLeft: {x: 0.33075958, y: 0}
+    bottomRight: {x: 0.3807282, y: 0}
+    topRight: {x: 0.3807282, y: 0.2611276}
+    topLeft: {x: 0.33075958, y: 0.2611276}
+  - bottomLeft: {x: 0.3807282, y: 0}
+    bottomRight: {x: 0.43176398, y: 0}
+    topRight: {x: 0.43176398, y: 0.20949554}
+    topLeft: {x: 0.3807282, y: 0.20949554}
+  - bottomLeft: {x: 0.43176398, y: 0}
+    bottomRight: {x: 0.48311362, y: 0}
+    topRight: {x: 0.48311362, y: 0.1611276}
+    topLeft: {x: 0.43176398, y: 0.1611276}
+  - bottomLeft: {x: 0.48311362, y: 0}
+    bottomRight: {x: 0.5338983, y: 0}
+    topRight: {x: 0.5338983, y: 0.19881305}
+    topLeft: {x: 0.48311362, y: 0.19881305}
+  - bottomLeft: {x: 0.5338983, y: 0}
+    bottomRight: {x: 0.58330196, y: 0}
+    topRight: {x: 0.58330196, y: 0.27240357}
+    topLeft: {x: 0.5338983, y: 0.27240357}
+  - bottomLeft: {x: 0.58330196, y: 0}
+    bottomRight: {x: 0.63082236, y: 0}
+    topRight: {x: 0.63082236, y: 0.35192877}
+    topLeft: {x: 0.58330196, y: 0.35192877}
+  - bottomLeft: {x: 0.63082236, y: 0}
+    bottomRight: {x: 0.6762712, y: 0}
+    topRight: {x: 0.6762712, y: 0.41305637}
+    topLeft: {x: 0.63082236, y: 0.41305637}
+  - bottomLeft: {x: 0.6762712, y: 0}
+    bottomRight: {x: 0.7194601, y: 0}
+    topRight: {x: 0.7194601, y: 0.45697328}
+    topLeft: {x: 0.6762712, y: 0.45697328}
+  - bottomLeft: {x: 0.7194601, y: 0}
+    bottomRight: {x: 0.760452, y: 0}
+    topRight: {x: 0.760452, y: 0.4875371}
+    topLeft: {x: 0.7194601, y: 0.4875371}
+  - bottomLeft: {x: 0.760452, y: 0}
+    bottomRight: {x: 0.7994978, y: 0}
+    topRight: {x: 0.7994978, y: 0.5068249}
+    topLeft: {x: 0.760452, y: 0.5068249}
+  - bottomLeft: {x: 0.7994978, y: 0}
+    bottomRight: {x: 0.8367859, y: 0}
+    topRight: {x: 0.8367859, y: 0.51661724}
+    topLeft: {x: 0.7994978, y: 0.51661724}
+  - bottomLeft: {x: 0.8367859, y: 0}
+    bottomRight: {x: 0.873258, y: 0}
+    topRight: {x: 0.873258, y: 0.51750743}
+    topLeft: {x: 0.8367859, y: 0.51750743}
+  - bottomLeft: {x: 0.873258, y: 0}
+    bottomRight: {x: 0.911425, y: 0}
+    topRight: {x: 0.911425, y: 0.50979227}
+    topLeft: {x: 0.873258, y: 0.50979227}
+  - bottomLeft: {x: 0.911425, y: 0}
+    bottomRight: {x: 0.95153797, y: 0}
+    topRight: {x: 0.95153797, y: 0.4925816}
+    topLeft: {x: 0.911425, y: 0.4925816}
+  - bottomLeft: {x: 0.95153797, y: 0}
+    bottomRight: {x: 0.9938481, y: 0}
+    topRight: {x: 0.9938481, y: 0.46765578}
+    topLeft: {x: 0.95153797, y: 0.46765578}
+  - bottomLeft: {x: 0.43176398, y: 0.1611276}
+    bottomRight: {x: 0.4764595, y: 0.1611276}
+    topRight: {x: 0.4764595, y: 0.5949555}
+    topLeft: {x: 0.43176398, y: 0.5949555}
+  - bottomLeft: {x: 0.4764595, y: 0.19881305}
+    bottomRight: {x: 0.5232266, y: 0.19881305}
+    topRight: {x: 0.5232266, y: 0.58486646}
+    topLeft: {x: 0.4764595, y: 0.58486646}
+  - bottomLeft: {x: 0.3807282, y: 0.20949554}
+    bottomRight: {x: 0.43025738, y: 0.20949554}
+    topRight: {x: 0.43025738, y: 0.53175074}
+    topLeft: {x: 0.3807282, y: 0.53175074}
+  - bottomLeft: {x: 0.5232266, y: 0.27240357}
+    bottomRight: {x: 0.574639, y: 0.27240357}
+    topRight: {x: 0.574639, y: 0.53590506}
+    topLeft: {x: 0.5232266, y: 0.53590506}
+  - bottomLeft: {x: 0.28254864, y: 0.32344213}
+    bottomRight: {x: 0.33509102, y: 0.32344213}
+    topRight: {x: 0.33509102, y: 0.53679526}
+    topLeft: {x: 0.28254864, y: 0.53679526}
+  - bottomLeft: {x: 0.574639, y: 0.35192877}
+    bottomRight: {x: 0.6274325, y: 0.35192877}
+    topRight: {x: 0.6274325, y: 0.515727}
+    topLeft: {x: 0.574639, y: 0.515727}
+  - bottomLeft: {x: 0.19278091, y: 0.43620178}
+    bottomRight: {x: 0.24482109, y: 0.43620178}
+    topRight: {x: 0.24482109, y: 0.6323442}
+    topLeft: {x: 0.19278091, y: 0.6323442}
+  - bottomLeft: {x: 0.6274325, y: 0.45697328}
+    bottomRight: {x: 0.6780289, y: 0.45697328}
+    topRight: {x: 0.6780289, y: 0.72878337}
+    topLeft: {x: 0.6274325, y: 0.72878337}
+  - bottomLeft: {x: 0.95153797, y: 0.46765578}
+    bottomRight: {x: 1, y: 0.46765578}
+    topRight: {x: 1, y: 0.81928784}
+    topLeft: {x: 0.95153797, y: 0.81928784}
+  - bottomLeft: {x: 0.6780289, y: 0.4875371}
+    bottomRight: {x: 0.7241055, y: 0.4875371}
+    topRight: {x: 0.7241055, y: 0.90059346}
+    topLeft: {x: 0.6780289, y: 0.90059346}
+  - bottomLeft: {x: 0.33509102, y: 0.2611276}
+    bottomRight: {x: 0.3787194, y: 0.2611276}
+    topRight: {x: 0.3787194, y: 0.7189911}
+    topLeft: {x: 0.33509102, y: 0.7189911}
+  - bottomLeft: {x: 0.15116133, y: 0.46884274}
+    bottomRight: {x: 0.19252981, y: 0.46884274}
+    topRight: {x: 0.19252981, y: 0.95727}
+    topLeft: {x: 0.15116133, y: 0.95727}
+  - bottomLeft: {x: 0.11155053, y: 0.49228486}
+    bottomRight: {x: 0.15078469, y: 0.49228486}
+    topRight: {x: 0.15078469, y: 1}
+    topLeft: {x: 0.11155053, y: 1}

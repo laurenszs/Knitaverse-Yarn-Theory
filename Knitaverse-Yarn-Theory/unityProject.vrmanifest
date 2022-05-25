@@ -1,0 +1,16 @@
+{
+  "source": "Unity",
+  "applications": [
+    {
+      "app_key": "application.generated.unity.knitaverseyarntheory.exe",
+      "launch_type": "url",
+      "url": "steam://launch/",
+      "action_manifest_path": "C:\\Users\\VRStudent\\3D Objects\\Knitaverse-Yarn-Theory\\Knitaverse-Yarn-Theory\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "strings": {
+        "en_us": {
+          "name": "Knitaverse: Yarn-Theory [Testing]"
+        }
+      }
+    }
+  ]
+}
