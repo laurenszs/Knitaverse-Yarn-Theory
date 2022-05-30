@@ -36,22 +36,5 @@ public class OnboardingBoard : MonoBehaviour
         needle2.SetActive(true);
         yield return new WaitForSeconds(1f);
         board.SetActive(true);
-        //AudioStopPlaying();
     }
-
-    //void AudioStopPlaying()
-    //{
-    //    keepPlaying = false;
-    //}
-
-    //IEnumerator SoundOut()
-    //{
-    //    knittingAudio.PlayOneShot(knitting);
-
-    //    while (keepPlaying)
-    //    {
-    //        knittingAudio.PlayOneShot(knitting);
-    //        yield return new WaitForSeconds(knitSoundTimer);
-    //    }
-    //}
 }
