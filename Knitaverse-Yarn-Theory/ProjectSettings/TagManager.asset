@@ -3,12 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - FadeableObject
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Floor
   - Water
   - UI
   - StencilLayer1
@@ -17,7 +18,7 @@ TagManager:
   - Body
   - Hands
   - Disco
-  - 
+  - Grandma
   - 
   - 
   - 
