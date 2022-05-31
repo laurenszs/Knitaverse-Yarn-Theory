@@ -1,6 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using Unity.Mathematics;
 using UnityEngine;
 
@@ -9,30 +7,37 @@ public class FadeObjects : MonoBehaviour
     [SerializeField] private GameObject player;
     [SerializeField] private float fadingDistance = 10f;
 
+    [SerializeField] private string materialProperty;
+    private Material _fadingMaterial;
     private float _collisionPoint;
-    [SerializeField] private Material fadingMaterial;
     private bool _triggered;
-    private static readonly int Opacity = Shader.PropertyToID("_Opacity");
 
     private void Start()
     {
-        _collisionPoint = transform.localScale.x / 2;
+        _collisionPoint = transform.lossyScale.x / 2;
+        _fadingMaterial = GetComponent<Renderer>().material;
     }
 
     private void Update()
     {
         var actualDistance =
-            math.distance(_collisionPoint, math.distance(transform.position, player.transform.position));
+            math.distance(math.distance(transform.position, player.transform.position), _collisionPoint);
 
         if (actualDistance <= fadingDistance)
         {
-            fadingMaterial.SetFloat(Opacity, actualDistance / fadingDistance);
+            _fadingMaterial.SetFloat(materialProperty, actualDistance / fadingDistance);
         }
         else
         {
-            fadingMaterial.SetFloat(Opacity, 1);
+            _fadingMaterial.SetFloat(materialProperty, 1);
         }
-        
-        Debug.Log(actualDistance);
+    }
+
+    private void OnDrawGizmos()
+    {
+        if (!(math.distance(math.distance(transform.position, player.transform.position),
+                _collisionPoint) <= fadingDistance)) return;
+        Gizmos.color = Color.magenta;
+        Gizmos.DrawLine(transform.position, player.transform.position);
     }
 }
