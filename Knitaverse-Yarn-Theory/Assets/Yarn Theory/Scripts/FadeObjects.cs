@@ -32,7 +32,10 @@ public class FadeObjects : MonoBehaviour
             _fadingMaterial.SetFloat(materialProperty, 1);
         }
 
-        Debug.Log($"player: {player.transform.position} object: {transform.position} dist: {actualDistance}");
+        if (materialProperty == String.Empty)
+        {
+            Debug.LogWarning("No property added to fading script");
+        }
     }
 
     private void OnDrawGizmos()
