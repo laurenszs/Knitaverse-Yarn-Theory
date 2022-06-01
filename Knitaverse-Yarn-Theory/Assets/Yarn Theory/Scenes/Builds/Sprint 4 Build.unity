@@ -968,6 +968,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 905300363664048962, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
+      propertyPath: m_WrapMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1053458934064073436, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -976,12 +980,20 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3714675725669774765, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
+      propertyPath: m_WrapMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3866903575734009540, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
       propertyPath: m_Name
       value: KnittingTunnel (2)
       objectReference: {fileID: 0}
     - target: {fileID: 3866903575734009540, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4094437452715216405, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
+      propertyPath: m_WrapMode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4286162133345914483, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
@@ -1070,7 +1082,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8949512849355653959, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8949512850632732985, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
+      propertyPath: m_WrapMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9194892962024452447, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
       propertyPath: m_Mesh
@@ -10082,7 +10098,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8949512849355653959, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9194892962024452447, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
       propertyPath: m_Mesh
