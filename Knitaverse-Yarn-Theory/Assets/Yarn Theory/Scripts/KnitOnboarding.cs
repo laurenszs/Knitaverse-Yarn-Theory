@@ -12,7 +12,7 @@ public class KnitOnboarding : MonoBehaviour
     void Start()
     {
         StartCoroutine(SoundOut());
-        Invoke("AudioStopPlaying", 2.0f);
+        Invoke("AudioStopPlaying", 3.0f);
     }
 
     void AudioStopPlaying()
@@ -22,6 +22,8 @@ public class KnitOnboarding : MonoBehaviour
 
     IEnumerator SoundOut()
     {
+        yield return new WaitForSeconds(3.5f);
+
         audioSource.PlayOneShot(knitting);
 
         while (keepPlaying)
