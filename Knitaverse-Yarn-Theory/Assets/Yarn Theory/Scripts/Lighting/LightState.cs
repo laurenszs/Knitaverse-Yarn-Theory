@@ -9,13 +9,12 @@ public class LightState : MonoBehaviour
     private GameObject pyramid;
 
     [SerializeField] private GameObject dayNightObject;
-    [SerializeField] private GameObject pointLight;
+    [SerializeField] private GameObject centerLight;
 
     [Header("State Variables")] [SerializeField]
     private int stateAmount = 3;
 
     [SerializeField] private int currentState = 0;
-    [SerializeField] private float skyboxExposure = .5f;
 
     // Start is called before the first frame update
     void Start()
@@ -41,20 +40,20 @@ public class LightState : MonoBehaviour
             case 0:
                 pyramid.SetActive(false);
                 dayNightObject.SetActive(true);
-                pointLight.SetActive(false);
+                centerLight.SetActive(false);
                 break;
             //Dark
             case 1:
                 pyramid.SetActive(true);
                 dayNightObject.SetActive(false);
-                pointLight.SetActive(false);
+                centerLight.SetActive(false);
                 //  RenderSettings.skybox.SetFloat("_Exposure", skyboxExposure);
                 break;
             //center light
             case 2:
                 pyramid.SetActive(true);
                 dayNightObject.SetActive(false);
-                pointLight.SetActive(true);
+                centerLight.SetActive(true);
                 break;
         }
     }

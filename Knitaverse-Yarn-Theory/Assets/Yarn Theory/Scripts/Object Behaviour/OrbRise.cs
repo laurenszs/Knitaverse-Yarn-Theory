@@ -3,13 +3,14 @@ using UnityEngine;
 
 public class OrbRise : MonoBehaviour
 {
+    [SerializeField] private GameObject orbContainer;
     [SerializeField] private List<RiseUp> orblist;
     [SerializeField] private GameObject spawners;
 
 
     private void Start()
     {
-        foreach (var orb in GetComponentsInChildren<RiseUp>())
+        foreach (var orb in orbContainer.GetComponentsInChildren<RiseUp>())
         {
             orblist.Add(orb);
         }
@@ -25,10 +26,13 @@ public class OrbRise : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
+        Debug.Log("beep boop collision");
         if (!other.CompareTag("Player")) return;
+        Debug.Log(other + " colliding");
         spawners.SetActive(true);
         foreach (var t in orblist)
         {
+            Debug.Log(t + " moving up");
             t.MoveUp();
         }
     }

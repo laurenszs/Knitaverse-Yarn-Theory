@@ -313,6 +313,7 @@ GameObject:
   - component: {fileID: 3015453883775262104}
   - component: {fileID: 4474501006916157720}
   - component: {fileID: 4474501006916157721}
+  - component: {fileID: 1111334812}
   m_Layer: 0
   m_Name: Knit_360_bend_2
   m_TagString: Untagged
@@ -412,6 +413,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   orblist: []
   spawners: {fileID: 6929991618565777079}
+--- !u!114 &1111334812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3664231508456029261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d9cf4ca081ee5f418f70d83118b3727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightContainer: {fileID: 4474501006423604940}
+  fadeSpeed: 0.001
+  fadeCompletion: 0
+  lightList: []
+  intensityValue: []
 --- !u!1 &4474501005137930715
 GameObject:
   m_ObjectHideFlags: 0
@@ -429,7 +447,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4474501005137930714
 Transform:
   m_ObjectHideFlags: 0
@@ -642,7 +660,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4474501005215424436
 Transform:
   m_ObjectHideFlags: 0
@@ -802,7 +820,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4474501005241832429
 Transform:
   m_ObjectHideFlags: 0
@@ -1865,7 +1883,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4474501006360056796
 Transform:
   m_ObjectHideFlags: 0
@@ -2128,7 +2146,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4474501006423604939
 Transform:
   m_ObjectHideFlags: 0
@@ -3221,7 +3239,6 @@ GameObject:
   - component: {fileID: 7528585106648150781}
   - component: {fileID: 8585534719522424546}
   - component: {fileID: 8585534719522424547}
-  - component: {fileID: 4474501005959354643}
   m_Layer: 0
   m_Name: MovingBall (3)
   m_TagString: Untagged
@@ -3308,24 +3325,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementParams: {x: 0, y: 0, z: 1}
   movementSpeed: 1
---- !u!114 &4474501005959354643
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6809866028717789281}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87231d0eda10af14aa5b7a1f46d91fdb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  band: 1
-  startScale: 10
-  scaleMult: 100
-  useMovement: 0
-  material: {fileID: 2100000, guid: 31f3a071081620b42b1f0810219ce9f5, type: 2}
-  colorMult: 5
 --- !u!1 &6809866028798622607
 GameObject:
   m_ObjectHideFlags: 0
@@ -3338,7 +3337,6 @@ GameObject:
   - component: {fileID: 7528585106533701907}
   - component: {fileID: 8585534719538048268}
   - component: {fileID: 8585534719538048269}
-  - component: {fileID: 4474501005842985721}
   m_Layer: 0
   m_Name: MovingBall (4)
   m_TagString: Untagged
@@ -3425,24 +3423,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementParams: {x: 0, y: 0, z: 1}
   movementSpeed: 1
---- !u!114 &4474501005842985721
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6809866028798622607}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87231d0eda10af14aa5b7a1f46d91fdb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  band: 1
-  startScale: 10
-  scaleMult: 100
-  useMovement: 0
-  material: {fileID: 2100000, guid: 31f3a071081620b42b1f0810219ce9f5, type: 2}
-  colorMult: 5
 --- !u!1 &6809866029264795115
 GameObject:
   m_ObjectHideFlags: 0
@@ -3455,7 +3435,6 @@ GameObject:
   - component: {fileID: 7528585107148740471}
   - component: {fileID: 8585534718919861096}
   - component: {fileID: 8585534718919861097}
-  - component: {fileID: 4474501006452817053}
   m_Layer: 0
   m_Name: MovingBall (5)
   m_TagString: Untagged
@@ -3542,24 +3521,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementParams: {x: 0, y: 0, z: 1}
   movementSpeed: 1
---- !u!114 &4474501006452817053
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6809866029264795115}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87231d0eda10af14aa5b7a1f46d91fdb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  band: 1
-  startScale: 10
-  scaleMult: 100
-  useMovement: 0
-  material: {fileID: 2100000, guid: 31f3a071081620b42b1f0810219ce9f5, type: 2}
-  colorMult: 5
 --- !u!1 &6809866029324350414
 GameObject:
   m_ObjectHideFlags: 0
@@ -3572,7 +3533,6 @@ GameObject:
   - component: {fileID: 7528585107122606418}
   - component: {fileID: 8585534719049016653}
   - component: {fileID: 8585534719049016652}
-  - component: {fileID: 4474501006424292024}
   m_Layer: 0
   m_Name: MovingBall
   m_TagString: Untagged
@@ -3659,24 +3619,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementParams: {x: 0, y: 0, z: 1}
   movementSpeed: 1
---- !u!114 &4474501006424292024
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6809866029324350414}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87231d0eda10af14aa5b7a1f46d91fdb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  band: 1
-  startScale: 10
-  scaleMult: 100
-  useMovement: 0
-  material: {fileID: 2100000, guid: 31f3a071081620b42b1f0810219ce9f5, type: 2}
-  colorMult: 5
 --- !u!1 &6809866029427799666
 GameObject:
   m_ObjectHideFlags: 0
@@ -3689,7 +3631,6 @@ GameObject:
   - component: {fileID: 7528585107246765294}
   - component: {fileID: 8585534718623654129}
   - component: {fileID: 8585534718623654128}
-  - component: {fileID: 4474501006019247876}
   m_Layer: 0
   m_Name: MovingBall (6)
   m_TagString: Untagged
@@ -3776,24 +3717,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementParams: {x: 0, y: 0, z: 1}
   movementSpeed: 1
---- !u!114 &4474501006019247876
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6809866029427799666}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87231d0eda10af14aa5b7a1f46d91fdb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  band: 1
-  startScale: 10
-  scaleMult: 100
-  useMovement: 0
-  material: {fileID: 2100000, guid: 31f3a071081620b42b1f0810219ce9f5, type: 2}
-  colorMult: 5
 --- !u!1 &6809866029685302684
 GameObject:
   m_ObjectHideFlags: 0
