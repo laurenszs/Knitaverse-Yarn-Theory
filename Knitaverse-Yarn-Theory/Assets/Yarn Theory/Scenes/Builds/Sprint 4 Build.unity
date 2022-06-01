@@ -14630,6 +14630,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hub prefab
       objectReference: {fileID: 0}
+    - target: {fileID: 8720929374865834525, guid: babcdd937c577414cbc5fe7211852ab6, type: 3}
+      propertyPath: rotationSpeed.x
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8720929375246561926, guid: babcdd937c577414cbc5fe7211852ab6, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -14642,9 +14646,21 @@ PrefabInstance:
       propertyPath: m_CullingMask.m_Bits
       value: 503
       objectReference: {fileID: 0}
+    - target: {fileID: 8720929375365921201, guid: babcdd937c577414cbc5fe7211852ab6, type: 3}
+      propertyPath: rotationSpeed.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8720929375398204834, guid: babcdd937c577414cbc5fe7211852ab6, type: 3}
+      propertyPath: rotationSpeed.x
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8720929375922670216, guid: babcdd937c577414cbc5fe7211852ab6, type: 3}
       propertyPath: traceLayerMask.m_Bits
       value: 247
+      objectReference: {fileID: 0}
+    - target: {fileID: 8720929376447962846, guid: babcdd937c577414cbc5fe7211852ab6, type: 3}
+      propertyPath: rotationSpeed.x
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 9118749599357301794, guid: babcdd937c577414cbc5fe7211852ab6, type: 3}
       propertyPath: m_LocalPosition.x
