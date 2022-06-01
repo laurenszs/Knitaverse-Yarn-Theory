@@ -31,6 +31,8 @@ public class FadeObjects : MonoBehaviour
         {
             _fadingMaterial.SetFloat(materialProperty, 1);
         }
+
+        Debug.Log($"player: {player.transform.position} object: {transform.position} dist: {actualDistance}");
     }
 
     private void OnDrawGizmos()
