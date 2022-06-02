@@ -39,7 +39,7 @@ public class OnboardingBoard : MonoBehaviour
         needle2.SetActive(true);
         yield return new WaitForSeconds(1f);
         board.SetActive(true);
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
 
         float alpha = UIImages[0].color.a;
 
