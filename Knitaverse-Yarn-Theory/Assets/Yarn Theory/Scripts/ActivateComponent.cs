@@ -33,6 +33,7 @@ public class ActivateComponent : MonoBehaviour
                 stayActiveObject[i].gameObject.SetActive(true);
             }
         }
+        StartCoroutine(TunnelNext());
     }
     private void OnTriggerExit(Collider other)
     {
@@ -50,7 +51,7 @@ public class ActivateComponent : MonoBehaviour
                 disableObject[i].gameObject.SetActive(true);
             }
         }
-
+        IEnummerator TunnelNext()
     }
 
 }
