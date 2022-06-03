@@ -31,18 +31,7 @@ public class FadeObjects : MonoBehaviour
         {
             _fadingMaterial.SetFloat(materialProperty, 1);
         }
-
-        if (materialProperty == String.Empty)
-        {
-            Debug.LogWarning("No property added to fading script");
-        }
-    }
-
-    private void OnDrawGizmos()
-    {
-        if (!(math.distance(math.distance(transform.position, player.transform.position),
-                _collisionPoint) <= fadingDistance)) return;
-        Gizmos.color = Color.magenta;
-        Gizmos.DrawLine(transform.position, player.transform.position);
+        
+        //Debug.Log(actualDistance);
     }
 }
