@@ -14,6 +14,8 @@ public class VRController : MonoBehaviour
     public SteamVR_Action_Boolean m_MovePress = null;
     public SteamVR_Action_Vector2 m_MoveValue = null;
 
+    public AudioSource audioSource;
+
     [SerializeField]
     private Transform playerTransform, headTransform;
 
@@ -82,6 +84,13 @@ public class VRController : MonoBehaviour
         
         // Apply
         m_CharacterController.Move(movement * Time.deltaTime);
+
+        if (m_CharacterController.isGrounded == true && m_Speed > 0.2f && audioSource.isPlaying == false)
+        {
+            audioSource.volume = Random.Range(0.6f, 0.8sf);
+            audioSource.pitch = Random.Range(0.8f, 1.1f);
+            audioSource.Play();
+        }
     }
 
     // Calculate the orientation using the trackpad position
