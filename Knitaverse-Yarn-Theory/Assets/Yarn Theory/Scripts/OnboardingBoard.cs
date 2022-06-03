@@ -30,7 +30,6 @@ public class OnboardingBoard : MonoBehaviour
 
     IEnumerator ExecuteAfterTime()
     {
-        Debug.Log("Pass");
         yield return new WaitForSeconds(1f);
         needleAudio.PlayOneShot(needleSFX);
         needle1.SetActive(true);

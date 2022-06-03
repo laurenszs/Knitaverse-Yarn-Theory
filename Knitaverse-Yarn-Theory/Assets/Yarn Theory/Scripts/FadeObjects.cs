@@ -33,6 +33,6 @@ public class FadeObjects : MonoBehaviour
             fadingMaterial.SetFloat(Opacity, 1);
         }
         
-        Debug.Log(actualDistance);
+        //Debug.Log(actualDistance);
     }
 }

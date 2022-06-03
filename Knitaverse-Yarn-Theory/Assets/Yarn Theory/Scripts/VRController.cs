@@ -85,10 +85,10 @@ public class VRController : MonoBehaviour
         // Apply
         m_CharacterController.Move(movement * Time.deltaTime);
 
-        if (m_CharacterController.isGrounded == true && m_Speed > 0.2f && audioSource.isPlaying == false)
+        if (Mathf.Abs(m_Speed) > 0.2f && audioSource.isPlaying == false)
         {
-            audioSource.volume = Random.Range(0.6f, 0.8sf);
-            audioSource.pitch = Random.Range(0.8f, 1.1f);
+            audioSource.volume = Random.Range(0.4f, 0.8f);
+            audioSource.pitch = Random.Range(0.9f, 1.1f);
             audioSource.Play();
         }
     }
