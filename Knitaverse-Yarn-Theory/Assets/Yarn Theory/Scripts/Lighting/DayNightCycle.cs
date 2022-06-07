@@ -19,17 +19,16 @@ public class DayNightCycle : MonoBehaviour
     [SerializeField] private AnimationCurve moonIntensity;
 
     [Header("Other Lighting")] [SerializeField]
-    private AnimationCurve lightingIntesityMultiplier;
+    private AnimationCurve lightingIntensityMultiplier;
 
     [SerializeField] private AnimationCurve reflectionsIntensityMultiplier;
-    private Material skyboxMaterial;
 
     private void Start()
     {
         timeRate = 1f / fullDayLength;
         time = startTime;
 
-        skyboxMaterial = RenderSettings.skybox;
+
     }
 
     // Update is called once per frame
@@ -57,23 +56,6 @@ public class DayNightCycle : MonoBehaviour
         //set light colors
         sun.color = sunColor.Evaluate(time);
         moon.color = moonColor.Evaluate(time);
-        //set skybox color
-        /*SetSkyboxExposure(3.5f);
-        if (sun.gameObject.activeInHierarchy)
-        {
-            skyboxMaterial.SetColor("_GroundColor", sun.color);
-            skyboxMaterial.SetColor("_SkyTint", sun.color);
-        }
-        else
-        {
-            skyboxMaterial.SetColor("_GroundColor", moon.color);
-            skyboxMaterial.SetColor("_SkyTint", moon.color);
-        }*/
-    }
-
-    public void SetSkyboxExposure(float exposure)
-    {
-        skyboxMaterial.SetFloat("_Exposure", exposure);
     }
 
     private void EnableCelestial()
@@ -101,7 +83,7 @@ public class DayNightCycle : MonoBehaviour
 
     private void AmbientProperties()
     {
-        RenderSettings.ambientIntensity = lightingIntesityMultiplier.Evaluate(time);
+        RenderSettings.ambientIntensity = lightingIntensityMultiplier.Evaluate(time);
         RenderSettings.reflectionIntensity = reflectionsIntensityMultiplier.Evaluate(time);
     }
 }
