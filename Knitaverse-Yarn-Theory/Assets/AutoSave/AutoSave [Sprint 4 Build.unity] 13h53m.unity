@@ -1584,11 +1584,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
---- !u!1 &214577544 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3866903575734009540, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
-  m_PrefabInstance: {fileID: 214577543}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &224296153
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13829,10 +13824,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 954458296569048724, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
-      propertyPath: secondTunnel
-      value: 
-      objectReference: {fileID: 214577544}
     - target: {fileID: 1053458934064073436, guid: 3fc95199190d71a4d90413c4562df4d8, type: 3}
       propertyPath: m_IsActive
       value: 1
