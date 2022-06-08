@@ -6503,8 +6503,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0ce1b05aa351164085d0a35adeecb02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 0}
-  lightCordOn: {fileID: 0}
+  lightCordOn: {fileID: 8300000, guid: 2ec8bc6ecc9e7704782215cd975046ba, type: 3}
 --- !u!1 &1039819329
 GameObject:
   m_ObjectHideFlags: 0
@@ -16592,6 +16591,46 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 10.06
       objectReference: {fileID: 0}
+    - target: {fileID: 5563678637332412531, guid: 62221a87468e0504497f5c6eab7dd543, type: 3}
+      propertyPath: onButtonIsPressed.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5563678637332412531, guid: 62221a87468e0504497f5c6eab7dd543, type: 3}
+      propertyPath: onButtonDown.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1038610156}
+    - target: {fileID: 5563678637332412531, guid: 62221a87468e0504497f5c6eab7dd543, type: 3}
+      propertyPath: onButtonIsPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5563678637332412531, guid: 62221a87468e0504497f5c6eab7dd543, type: 3}
+      propertyPath: onButtonDown.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetState
+      objectReference: {fileID: 0}
+    - target: {fileID: 5563678637332412531, guid: 62221a87468e0504497f5c6eab7dd543, type: 3}
+      propertyPath: onButtonIsPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1038610157}
+    - target: {fileID: 5563678637332412531, guid: 62221a87468e0504497f5c6eab7dd543, type: 3}
+      propertyPath: onButtonIsPressed.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5563678637332412531, guid: 62221a87468e0504497f5c6eab7dd543, type: 3}
+      propertyPath: onButtonIsPressed.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PlaySound
+      objectReference: {fileID: 0}
+    - target: {fileID: 5563678637332412531, guid: 62221a87468e0504497f5c6eab7dd543, type: 3}
+      propertyPath: onButtonDown.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: LightState, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5563678637332412531, guid: 62221a87468e0504497f5c6eab7dd543, type: 3}
+      propertyPath: onButtonIsPressed.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LightCord, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5563678637332412531, guid: 62221a87468e0504497f5c6eab7dd543, type: 3}
+      propertyPath: onButtonIsPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5826485324691120499, guid: 62221a87468e0504497f5c6eab7dd543, type: 3}
       propertyPath: m_Layer
       value: 9
@@ -16634,8 +16673,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: 2ec8bc6ecc9e7704782215cd975046ba, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0

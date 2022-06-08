@@ -5,9 +5,10 @@ using UnityEngine;
 public class LightCord : MonoBehaviour
 {
     public AudioClip lightCordOn;
+    public AudioSource audioSource;
 
     public void PlaySound()
     {
-        gameObject.GetComponent<AudioSource>().PlayOneShot(lightCordOn);
+        audioSource.PlayOneShot(lightCordOn);
     }
 }
