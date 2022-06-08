@@ -21,7 +21,7 @@ public class KnittingAudio : MonoBehaviour
     void AudioStopPlaying()
     {
         keepPlaying = false;
-        gameObject.SetActive(false);
+        GetComponent<Collider>().enabled = !GetComponent<Collider>().enabled;
     }
 
     IEnumerator SoundOut()
