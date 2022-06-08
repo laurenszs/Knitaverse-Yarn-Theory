@@ -9,6 +9,7 @@ public class LightCord : MonoBehaviour
 
     public void PlaySound()
     {
+        if (!audioSource) return;
         audioSource.PlayOneShot(lightCordOn);
     }
 }
