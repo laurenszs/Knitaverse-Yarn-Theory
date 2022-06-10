@@ -50,7 +50,6 @@ public class ActivateComponent : MonoBehaviour
                 disableObject[i].gameObject.SetActive(true);
             }
         }
-
     }
 
 }
