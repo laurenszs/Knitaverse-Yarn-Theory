@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 775ad4994fda946d1a5936c7e2dfc785, type: 3}
   m_Name: orange
   m_EditorClassIdentifier: 
-  particleIndices: 3d00000058000000
+  particleIndices: 5800000070000000
   m_Blueprint: {fileID: 11400000}
 --- !u!114 &-3991956095916143859
 MonoBehaviour:
@@ -40,7 +40,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 775ad4994fda946d1a5936c7e2dfc785, type: 3}
   m_Name: red
   m_EditorClassIdentifier: 
-  particleIndices: 050100000a0100001001000011010000
+  particleIndices: 1001000011010000
   m_Blueprint: {fileID: 11400000}
 --- !u!114 &11400000
 MonoBehaviour:
@@ -4921,5 +4921,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 775ad4994fda946d1a5936c7e2dfc785, type: 3}
   m_Name: blue
   m_EditorClassIdentifier: 
-  particleIndices: 04000000050000000a0000000b0000001000000021000000
+  particleIndices: 0200000008000000
   m_Blueprint: {fileID: 11400000}
