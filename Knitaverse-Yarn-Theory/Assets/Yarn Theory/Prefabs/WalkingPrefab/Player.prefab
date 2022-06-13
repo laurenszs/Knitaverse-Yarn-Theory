@@ -1265,6 +1265,7 @@ MonoBehaviour:
   m_MoveValue:
     actionPath: /actions/default/in/TouchpadPosition
     needsReinit: 0
+  audioSource: {fileID: 0}
   playerTransform: {fileID: 0}
   headTransform: {fileID: 2149634966077339608}
 --- !u!1 &2149634966077259738
