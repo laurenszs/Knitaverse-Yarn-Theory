@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: RadiantUrchin
+  m_Name: Radiant Mirror
   m_Shader: {fileID: -6465566751694194690, guid: 08de22f35af9f804788569ecaeca8a32, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 2
@@ -38,12 +38,12 @@ Material:
     m_Ints: []
     m_Floats:
     - _Emission_Power: 1
-    - _Fresnel_Power: 1
+    - _Fresnel_Power: 1.83
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors:
-    - _Base_Color: {r: 0.012283388, g: 0.0098433215, b: 0.745283, a: 1}
-    - _Emission: {r: 0.010398629, g: 0.0034662099, b: 0.13240921, a: 0}
+    - _Base_Color: {r: 0.4528302, g: 0.4528302, b: 0.4528302, a: 1}
+    - _Emission: {r: 1, g: 1, b: 1, a: 0}
     - _Tiling: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &998175376351293971

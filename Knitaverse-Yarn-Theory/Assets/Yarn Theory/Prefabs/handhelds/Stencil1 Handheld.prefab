@@ -179,6 +179,7 @@ GameObject:
   - component: {fileID: 6337697846186048645}
   - component: {fileID: 6337697846186048646}
   - component: {fileID: 6337697846186048647}
+  - component: {fileID: 2667333304543278924}
   m_Layer: 0
   m_Name: Stencil1 Handheld
   m_TagString: Untagged
@@ -339,6 +340,19 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   interactable: {fileID: 0}
+--- !u!114 &2667333304543278924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6337697846186048888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a91046bbafd72ab4887ab8993e3eee81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resetHeight: 0
 --- !u!1 &7605529549550079529
 GameObject:
   m_ObjectHideFlags: 0
@@ -400,7 +414,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 41d0a537d008ec94e9a085073bd56ccc, type: 2}
+  - {fileID: 2100000, guid: c8e2d9a17cc996e438538068c14c7135, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
