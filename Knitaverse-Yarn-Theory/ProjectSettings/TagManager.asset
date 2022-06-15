@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - FadeableObject
+  - LightCord
   layers:
   - Default
   - TransparentFX
@@ -22,7 +23,7 @@ TagManager:
   - Hub
   - Donut
   - Urchin
-  - 
+  - LightCord
   - 
   - 
   - 
