@@ -22,7 +22,7 @@ public class KnitOnboarding : MonoBehaviour
 
     IEnumerator SoundOut()
     {
-        yield return new WaitForSeconds(3.5f);
+        yield return new WaitForSeconds(0.5f);
 
         audioSource.PlayOneShot(knitting);
 
