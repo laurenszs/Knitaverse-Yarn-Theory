@@ -14,7 +14,7 @@ public class TeleportingTopFloor : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             StartCoroutine(TeleportDelay());
-
+            Debug.Log("teleported");
         }
     }
     public void TeleportationPoint()
