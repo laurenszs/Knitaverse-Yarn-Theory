@@ -30,15 +30,15 @@ public class OnboardingBoard : MonoBehaviour
 
     IEnumerator ExecuteAfterTime()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2f);
         needleAudio.PlayOneShot(needleSFX);
         needle1.SetActive(true);
         yield return new WaitForSeconds(1f);
         needleAudio.PlayOneShot(needleSFX);
         needle2.SetActive(true);
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1.5f);
         board.SetActive(true);
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(3f);
 
         float alpha = UIImages[0].color.a;
 
