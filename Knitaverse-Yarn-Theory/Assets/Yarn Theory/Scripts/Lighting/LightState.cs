@@ -10,9 +10,11 @@ public class LightState : MonoBehaviour
 
     [SerializeField] private GameObject dayNightObject;
     [SerializeField] private GameObject centerLight;
+    [SerializeField] private GameObject pressurePlate;
+    [SerializeField] private GameObject offboardingText;
 
     [Header("State Variables")] [SerializeField]
-    private int stateAmount = 3;
+    private int stateAmount = 4;
 
     [SerializeField] private int currentState = 0;
 
@@ -54,6 +56,10 @@ public class LightState : MonoBehaviour
                 pyramid.SetActive(true);
                 dayNightObject.SetActive(false);
                 centerLight.SetActive(true);
+                break;
+            case 3:
+                pressurePlate.SetActive(true);
+                offboardingText.SetActive(true);
                 break;
         }
     }
