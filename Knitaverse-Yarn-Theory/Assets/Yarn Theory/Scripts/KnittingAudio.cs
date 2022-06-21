@@ -8,17 +8,12 @@ public class KnittingAudio : MonoBehaviour
     public AudioClip knitting;
     public bool keepPlaying = true;
     public float knitSoundTimer;
-    public GameObject secondTunnel;
-    public GameObject thirdTunnel;
-    public GameObject fourthTunnel;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
             StartCoroutine(SoundOut());
-            Invoke("AudioStopPlaying", 3.0f);
-            StartCoroutine(TunnelSpawning());
             Invoke("AudioStopPlaying", 3.0f);
         }
     }
@@ -31,22 +26,6 @@ public class KnittingAudio : MonoBehaviour
 
     IEnumerator SoundOut()
     {
-        audioSource.PlayOneShot(knitting);
-
-        while (keepPlaying)
-        {
-            audioSource.PlayOneShot(knitting);
-            yield return new WaitForSeconds(knitSoundTimer);
-        }
-    }
-
-    IEnumerator TunnelSpawning()
-    {
-        yield return new WaitForSeconds(3f);
-        secondTunnel.SetActive(true);
-
-        audioSource.PlayOneShot(knitting);
-
         while (keepPlaying)
         {
             audioSource.PlayOneShot(knitting);

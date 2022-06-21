@@ -42,8 +42,8 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors:
-    - _Base_Color: {r: 1, g: 0.7189842, b: 0, a: 1}
-    - _Emission: {r: 1.4980392, g: 0.36078432, b: 0.039215688, a: 0}
+    - _Base_Color: {r: 0, g: 0.27172852, b: 1, a: 1}
+    - _Emission: {r: 0, g: 1.9040127, b: 2, a: 0}
     - _Tiling: {r: 3, g: 3, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &998175376351293971
