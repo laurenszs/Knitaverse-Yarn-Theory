@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
 
     void PlusOne(Scene scene1, LoadSceneMode mode)
     {
-        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByBuildIndex(0) && cp)
+        if (scene1 == SceneManager.GetSceneByBuildIndex(0) && cp)
         {
             StartCoroutine(SetPlayerToChecpoint());
         }
