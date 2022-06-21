@@ -13,15 +13,23 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         DontDestroyOnLoad(this);
-        SceneManager.sceneLoaded += PlusOne;
-        StartCoroutine(ChangeNumbers());
     }
 
-    void PlusOne(Scene scene1, LoadSceneMode mode)
+    private void Update()
     {
-        if (scene1 == SceneManager.GetSceneByBuildIndex(0) && cp)
+        PlusOne();
+    }
+
+    void PlusOne()
+    {
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByBuildIndex(0) && cp)
         {
             StartCoroutine(SetPlayerToChecpoint());
+        }
+
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByBuildIndex(1))
+        {
+            cp = true;
         }
     }
 
@@ -30,12 +38,7 @@ public class GameManager : MonoBehaviour
         _player = GameObject.Find("Player");
         _player.transform.position = urchinCheckpoint.transform.position;
         yield return new WaitForEndOfFrame();
-    }
-
-    IEnumerator ChangeNumbers()
-    {
-        yield return new WaitForSeconds(2);
-        cp = true;
+        cp = false;
         yield return new WaitForEndOfFrame();
     }
 }
