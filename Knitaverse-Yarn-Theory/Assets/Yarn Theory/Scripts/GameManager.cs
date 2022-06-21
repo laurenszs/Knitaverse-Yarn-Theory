@@ -15,21 +15,29 @@ public class GameManager : MonoBehaviour
     {
         DontDestroyOnLoad(this);
         SceneManager.activeSceneChanged += PlusOne;
+        StartCoroutine(ChangeNumbers());
     }
 
     void PlusOne(Scene scene1, Scene scene2)
     {
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByBuildIndex(0) && sceneChanges >= 1)
         {
-            StartCoroutine(Stuff());
+            StartCoroutine(SetPlayerToChecpoint());
         }
     }
 
-    IEnumerator Stuff()
+    IEnumerator SetPlayerToChecpoint()
     {
         sceneChanges++;
         _player = GameObject.Find("Player");
         _player.transform.position = urchinCheckpoint.transform.position;
+        yield return new WaitForEndOfFrame();
+    }
+
+    IEnumerator ChangeNumbers()
+    {
+        yield return new WaitForSeconds(2);
+        sceneChanges++;
         yield return new WaitForEndOfFrame();
     }
 }
