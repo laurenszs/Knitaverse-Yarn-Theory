@@ -7,20 +7,19 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public GameObject urchinCheckpoint;
-    public int sceneChanges;
+    public bool cp;
     private GameObject _player;
 
-    // Start is called before the first frame update
     private void Awake()
     {
         DontDestroyOnLoad(this);
-        SceneManager.activeSceneChanged += PlusOne;
+        SceneManager.sceneLoaded += PlusOne;
         StartCoroutine(ChangeNumbers());
     }
 
-    void PlusOne(Scene scene1, Scene scene2)
+    void PlusOne(Scene scene1, LoadSceneMode mode)
     {
-        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByBuildIndex(0) && sceneChanges >= 1)
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByBuildIndex(0) && cp)
         {
             StartCoroutine(SetPlayerToChecpoint());
         }
@@ -28,7 +27,6 @@ public class GameManager : MonoBehaviour
 
     IEnumerator SetPlayerToChecpoint()
     {
-        sceneChanges++;
         _player = GameObject.Find("Player");
         _player.transform.position = urchinCheckpoint.transform.position;
         yield return new WaitForEndOfFrame();
@@ -37,7 +35,7 @@ public class GameManager : MonoBehaviour
     IEnumerator ChangeNumbers()
     {
         yield return new WaitForSeconds(2);
-        sceneChanges++;
+        cp = true;
         yield return new WaitForEndOfFrame();
     }
 }
