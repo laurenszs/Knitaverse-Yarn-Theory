@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Yarn Theory/Scenes/OBI SCENES/F OBI VR.unity
     guid: 1e180349ab3c8db44944485af868a21c
+  - enabled: 1
+    path: Assets/Yarn Theory/Scenes/Builds/Offboarding.unity
+    guid: 59c9a355890011b42a473895f18506b1
   m_configObjects:
     Unity.XR.OpenVR.Settings: {fileID: 11400000, guid: 42ca1758745e79d448d80c6e76c7c7a1, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: d077eabca91da2948a33234bc101a1f3, type: 2}
