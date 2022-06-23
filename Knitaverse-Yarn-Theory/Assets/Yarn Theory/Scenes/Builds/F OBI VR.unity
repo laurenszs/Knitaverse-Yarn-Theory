@@ -1223,7 +1223,7 @@ GameObject:
   - component: {fileID: 1136280325}
   - component: {fileID: 1136280324}
   - component: {fileID: 1136280323}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: table Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
