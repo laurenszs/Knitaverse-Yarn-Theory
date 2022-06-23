@@ -176,10 +176,10 @@ GameObject:
   m_Component:
   - component: {fileID: 6683295875115853762}
   - component: {fileID: 6337697846186048644}
-  - component: {fileID: 6337697846186048645}
   - component: {fileID: 6337697846186048646}
   - component: {fileID: 6337697846186048647}
   - component: {fileID: 2667333304543278924}
+  - component: {fileID: 3568601033818161078}
   m_Layer: 0
   m_Name: Stencil1 Handheld
   m_TagString: Untagged
@@ -221,19 +221,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &6337697846186048645
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6337697846186048888}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 13.399681, y: 2.5149806, z: 26.094715}
-  m_Center: {x: 0.19313374, y: -0.060375977, z: -4.082126}
 --- !u!114 &6337697846186048646
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -352,7 +339,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a91046bbafd72ab4887ab8993e3eee81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resetHeight: 0
+--- !u!65 &3568601033818161078
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6337697846186048888}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 12.471815, y: 2.2317138, z: 25.942114}
+  m_Center: {x: -0.115381695, y: 0.04097884, z: -3.949384}
 --- !u!1 &7605529549550079529
 GameObject:
   m_ObjectHideFlags: 0
@@ -364,6 +363,7 @@ GameObject:
   - component: {fileID: 508865831697340952}
   - component: {fileID: 1246655825692997740}
   - component: {fileID: 4091226656319076086}
+  - component: {fileID: 3333763976426654648}
   m_Layer: 0
   m_Name: Outter mirror part
   m_TagString: Untagged
@@ -436,3 +436,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &3333763976426654648
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7605529549550079529}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2534964839176971238, guid: c883918211dd54c41a67ae8333740b74, type: 3}

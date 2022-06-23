@@ -25,7 +25,7 @@ public class FadePoint : MonoBehaviour
         var actualDistance =
             math.distance(player.transform.position, transform.position);
 
-        if (actualDistance <= fadingDistance && ((actualDistance / fadingDistance) - fadeOffset) >= 0)
+        if (actualDistance <= fadingDistance /*&& ((actualDistance / fadingDistance) - fadeOffset) >= 0*/)
         {
             _fadingMaterial.SetFloat(materialProperty, (actualDistance / fadingDistance) - fadeOffset);
         }

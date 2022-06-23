@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Yarn Theory/Scenes/Builds/Sprint 4 Build.unity
     guid: 5c21d266557949440bfab0d090101169
   - enabled: 1
-    path: Assets/Yarn Theory/Scenes/OBI SCENES/F OBI VR.unity
+    path: Assets/Yarn Theory/Scenes/Builds/F OBI VR.unity
     guid: 1e180349ab3c8db44944485af868a21c
   - enabled: 1
     path: Assets/Yarn Theory/Scenes/Builds/Offboarding.unity
