@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6423103543400405540}
   - component: {fileID: 7965927868928628097}
   - component: {fileID: 5289581635861274955}
+  - component: {fileID: -5964128687486450412}
   m_Layer: 0
   m_Name: Rounded Cube
   m_TagString: Untagged
@@ -83,3 +84,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &-5964128687486450412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5938174267578335390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14ea5b1451bd2444abcc055606577976, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollSpeed: 0.05
+  maxHeight: 10
+  respawnHeight: 0
