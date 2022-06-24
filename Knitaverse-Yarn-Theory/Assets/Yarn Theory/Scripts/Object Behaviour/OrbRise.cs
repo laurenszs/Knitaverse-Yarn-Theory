@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -26,10 +27,15 @@ public class OrbRise : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
+        if (!other.CompareTag("Player")) return;
+        spawners.SetActive(true);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
         Debug.Log("beep boop collision");
         if (!other.CompareTag("Player")) return;
         Debug.Log(other + " colliding");
-        spawners.SetActive(true);
         foreach (var t in orblist)
         {
             Debug.Log(t + " moving up");
