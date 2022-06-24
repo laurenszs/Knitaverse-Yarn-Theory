@@ -511,6 +511,10 @@ PrefabInstance:
       propertyPath: m_StepOffset
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2149634966077327823, guid: dc8e29023b4d0b549ac3358969bfd0d0, type: 3}
+      propertyPath: m_MaxSpeed
+      value: 1.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc8e29023b4d0b549ac3358969bfd0d0, type: 3}
 --- !u!1 &859396183
@@ -21995,10 +21999,10 @@ BoxCollider:
   m_GameObject: {fileID: 1899270265819651076}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.07912876, y: 0.03488832, z: 0.021813808}
-  m_Center: {x: 0.00000030530114, y: 0.005500263, z: 0.10057255}
+  m_Size: {x: 0.1453609, y: 0.06746578, z: 0.120097674}
+  m_Center: {x: 0.000037623406, y: 0.00090892974, z: 0.051430747}
 --- !u!114 &1229553698042283697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22024,8 +22028,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1899270265819651076}
   m_LocalRotation: {x: -0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: 2.49, y: 4.239, z: 3.416}
-  m_LocalScale: {x: 4.86, y: 9.323448, z: 5.88831}
+  m_LocalPosition: {x: 2.49, y: 4.186, z: 3.416}
+  m_LocalScale: {x: 4.86, y: 9.323448, z: 6.399415}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4314928929619467777}
