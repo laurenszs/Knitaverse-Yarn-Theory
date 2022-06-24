@@ -87,7 +87,7 @@ public class VRController : MonoBehaviour
 
         if (Mathf.Abs(m_Speed) > 0.2f && audioSource.isPlaying == false)
         {
-            audioSource.volume = Random.Range(0.4f, 0.8f);
+            audioSource.volume = Random.Range(0.2f, 0.6f);
             audioSource.pitch = Random.Range(0.9f, 1.1f);
             audioSource.Play();
         }
